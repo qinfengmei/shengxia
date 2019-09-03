@@ -1,0 +1,44 @@
+2019-08-29 16:02:00,001 - root - INFO - 推流成功，对【isSuccess】断言,断言结果--预期值1 == 实际值1
+2019-08-29 16:02:00,004 - root - INFO - 对【直播状态】断言,断言结果--预期值1 == 实际值1
+2019-08-29 16:02:00,005 - root - INFO - 测试用例执行完毕
+2019-08-29 16:02:00,007 - root - INFO - ----------------------------------
+2019-08-29 16:02:00,009 - root - INFO - 测试用例开始执行
+2019-08-29 16:02:00,016 - root - INFO - 获取用例数据：{'id': 3.0, 'module': '达人圈', 'url': '/api/community/getViewers?noteId={0}', 'name': '观看直播人数', 'key': 'app接口', 'param': 'not argument', 'place': "sit;talent_circle;SELECT live_status from talent_circle.note_live_info  where note_id = '{0}';", 'way': 'GET', 'expect1': 'isSuccess=1', 'expect2': 'live_status=1', 'expect3': '', 'expect4': ''}
+2019-08-29 16:02:00,142 - root - INFO - 成功发起GET请求(http://shop.m.showjoy.com.cn/api/community/getViewers?noteId=1249)，请求url为：app接口，请求结果code为：200, 请求结果字段为：{"count":0,"data":0,"isRedirect":0,"isSuccess":1,"login":0}
+2019-08-29 16:02:00,143 - root - INFO - 请求传入数据：url:/api/community/getViewers?noteId={0},key:app接口,参数:not argument,请求方式：GET
+2019-08-29 16:02:01,386 - root - INFO - 连接数据库成功
+2019-08-29 16:02:01,396 - root - INFO - 成功登录sit环境数据库：talent_circle，版本为：5.7.25-log，执行SQL：SELECT live_status from talent_circle.note_live_info  where note_id = '1249'
+2019-08-29 16:02:01,418 - root - INFO - 查询结果：1
+2019-08-29 16:02:01,419 - root - INFO - 有人数观看，对【isSuccess】断言,断言结果--预期值1 == 实际值1
+2019-08-29 16:02:01,420 - root - INFO - 对观看人数断言,断言结果--预期值1 == 实际值1
+2019-08-29 16:02:01,421 - root - INFO - 测试用例执行完毕
+2019-08-29 16:02:01,422 - root - INFO - ----------------------------------
+2019-08-29 16:02:01,423 - root - INFO - 测试用例开始执行
+2019-08-29 16:02:01,432 - root - INFO - 获取用例数据：{'id': 4.0, 'module': '达人圈', 'url': '/api/community/viewLive?noteId={0}', 'name': '观众加入直播', 'key': '直播观众', 'param': 'not argument', 'place': "sit;talent_circle;SELECT pull_url from talent_circle.note_live_info  where note_id = '{0}';", 'way': 'GET', 'expect1': 'isSuccess=1', 'expect2': '【比较接口返回的pullUrl和数据库中的pullUrl】', 'expect3': '', 'expect4': ''}
+2019-08-29 16:02:01,566 - root - INFO - 成功发起GET请求(http://shop.m.showjoy.com.cn/api/community/viewLive?noteId=1249)，请求url为：直播观众，请求结果code为：200, 请求结果字段为：{"count":0,"data":{"followStatus":2,"headImage":"https://cdn1.showjoy.com/images/8b/8b957c862d3249f6938e27d8e9a6c219.png","imageList":["https://git-cdn.oss-cn-hangzhou.aliyuncs.com/shop/community/20190827/NCHPE3E5755S82V5A6J41566871150340-640x427.jpg"],"likeNumber":0,"liveStatus":1,"needBuyVip":0,"pullUrl":"rtmp://playlive.showjoy.com/live/88872881567065717?txSecret=6994118521b8f2c2477d39a9cf50d627&txTime=5D68D7F5","shopId":544655,"userId":8887288,"userName":"盛夏名字有点长哈哈哈哈","viewerUserName":"你说呢哈哈哈","viewers":1},"isRedirect":0,"isSuccess":1,"login":0}
+2019-08-29 16:02:01,567 - root - INFO - 请求传入数据：url:/api/community/viewLive?noteId={0},key:直播观众,参数:not argument,请求方式：GET
+2019-08-29 16:02:01,978 - root - INFO - 连接数据库成功
+2019-08-29 16:02:01,988 - root - INFO - 成功登录sit环境数据库：talent_circle，版本为：5.7.25-log，执行SQL：SELECT pull_url from talent_circle.note_live_info  where note_id = '1249'
+2019-08-29 16:02:02,026 - root - INFO - 查询结果：rtmp://playlive.showjoy.com/live/88872881567065717?txSecret=6994118521b8f2c2477d39a9cf50d627&txTime=5D68D7F5
+2019-08-29 16:02:03,033 - root - INFO - 加入成功，对【isSuccess】断言,断言结果--预期值1 == 实际值1
+2019-08-29 16:02:03,034 - root - INFO - 对【加入状态】断言,断言结果--预期值rtmp://playlive.showjoy.com/live/88872881567065717?txSecret=6994118521b8f2c2477d39a9cf50d627&txTime=5D68D7F5 == 实际值rtmp://playlive.showjoy.com/live/88872881567065717?txSecret=6994118521b8f2c2477d39a9cf50d627&txTime=5D68D7F5
+2019-08-29 16:02:03,036 - root - INFO - 测试用例执行完毕
+2019-08-29 16:02:03,036 - root - INFO - ----------------------------------
+2019-08-29 16:02:03,038 - root - INFO - 测试用例开始执行
+2019-08-29 16:02:03,048 - root - INFO - 获取测试用例：{'id': 5.0, 'module': '达人圈', 'url': '/api/community/likeLive', 'name': '观众对直播进行点赞', 'key': '直播观众', 'param': '{"noteId":{0}}', 'place': "sit;talent_circle;SELECT live_status from talent_circle.note_live_info  where note_id = '{0}';", 'way': 'POST', 'expect1': 'isSuccess=1', 'expect2': 'live_status=1', 'expect3': '', 'expect4': ''}
+2019-08-29 16:02:03,155 - root - INFO - 成功发起POST请求(直播观众)，请求结果code为：200, 请求结果字段为：{"count":0,"isRedirect":0,"isSuccess":1,"login":0}
+2019-08-29 16:02:03,156 - root - INFO - 请求传入的数据：url:/api/community/likeLive,way:POST,param:{"noteId":{0}},key:直播观众
+2019-08-29 16:02:04,401 - root - INFO - 连接数据库成功
+2019-08-29 16:02:04,412 - root - INFO - 成功登录sit环境数据库：talent_circle，版本为：5.7.25-log，执行SQL：SELECT live_status from talent_circle.note_live_info  where note_id = '1249'
+2019-08-29 16:02:04,432 - root - INFO - 查询结果：1
+2019-08-29 16:02:04,433 - root - INFO - 点赞成功，对【isSuccess】断言，断言结果--预期值1==实际值1
+2019-08-29 16:02:04,434 - root - INFO - 对【直播状态】断言,断言结果--预期值1 == 实际值1
+2019-08-29 16:02:04,435 - root - INFO - 测试用例执行完毕
+2019-08-29 16:02:04,436 - root - INFO - ----------------------------------
+2019-08-29 16:02:04,438 - root - INFO - 测试用例开始执行
+2019-08-29 16:02:04,449 - root - INFO - 开始执行测试用例:{'id': 6.0, 'module': '达人圈', 'url': '/api/community/follow?userId=8327650', 'name': '观众对主播关注状态的变化', 'key': '直播观众', 'param': 'not argument', 'place': "sit;talent_circle;SELECT live_status from talent_circle.note_live_info  where note_id = '{0}';", 'way': 'GET', 'expect1': 'isSuccess=1', 'expect2': 'live_status=1', 'expect3': '', 'expect4': ''}
+2019-08-29 16:02:04,450 - root - ERROR - 接口类型填写错误
+2019-08-29 16:02:04,450 - root - ERROR - get请求出错，出错原因:'NoneType' object is not subscriptable
+2019-08-29 16:02:04,451 - root - INFO - 请求传入的数据：url：/api/community/follow?userId=8327650,param：not argument，key：直播观众，way：GET
+2019-08-29 16:02:04,451 - root - INFO - 测试用例执行完毕
+2019-08-29 16:02:04,452 - root - INFO - ----------------------------------

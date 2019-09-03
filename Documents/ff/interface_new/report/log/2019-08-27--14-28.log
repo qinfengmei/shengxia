@@ -1,0 +1,9 @@
+2019-08-27 14:28:02,289 - root - INFO - 18768278576用户开始登录，返回登录信息b5f99e28-e29d-4bc6-9fb9-fa09eb935667
+2019-08-27 14:28:02,587 - root - INFO - 18768278576登录成功，返回token<153a1a69-039e-4183-a1b2-fb61aac4f086>
+2019-08-27 14:28:02,680 - root - INFO - 海妖后台登陆成功，返回token<eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mbyI6eyJlbWFpbCI6IiIsImdtdENyZWF0ZSI6MTQ2MTA4MTE0MDAwMCwiZ210TW9kaWZpZWQiOjE1NDcwNzA4MDEwMDAsImlkIjo5MTQwMTM2LCJpbWFnZSI6Ii8vY2RuMS5zaG93am95LmNvbS9zaG9wL3VzZXJfaGVhZC8yMDE4MDUxNC9YUjhRRkFIOVlSQUVZVkRVVFozQjE1MjYyODM5MzExODAuanBnIiwiaXNFbmFibGUiOnRydWUsImlzRmFrZSI6MCwibmljayI6Iua1t-WmliIsInNleFR5cGUiOiJtIiwidGVsIjoiMTM1NjcxMzY2NTQiLCJ1c2VybmFtZSI6Iua1t-WmliIsImFjY291bnRfdHlwZSI6MSwiYnluYW1lIjoi5rW35aaWIiwicmVhbE5hbWUiOiLmtbflppYiLCJzdXBwbGllcklkIjpbMF19LCJpYXQiOjE1NjY4ODcyODIsImV4cCI6MTU2NzQ5MjA4Mn0.4qj4o9carzlMn3OWCemp5s3-Ajes_sjKp-DsO-SGdCE>
+2019-08-27 14:28:02,690 - root - INFO - 测试用例开始执行
+2019-08-27 14:28:02,868 - root - INFO - 连接数据库成功
+2019-08-27 14:28:02,877 - root - INFO - 成功登录sit环境数据库：talent_circle，版本为：5.7.25-log，执行SQL：select status_code from trade_order_status where order_number = '{0}'
+2019-08-27 14:28:02,892 - root - INFO - Error: unable to fetch data
+2019-08-27 14:28:02,893 - root - INFO - 测试用例执行完毕
+2019-08-27 14:28:02,894 - root - INFO - ----------------------------------

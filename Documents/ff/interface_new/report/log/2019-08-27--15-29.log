@@ -1,0 +1,7 @@
+2019-08-27 15:29:13,807 - root - INFO - 18768278576用户开始登录，返回登录信息b5f99e28-e29d-4bc6-9fb9-fa09eb935667
+2019-08-27 15:29:14,101 - root - INFO - 18768278576登录成功，返回token<0f70cf64-94f4-4617-be28-a0fbf8cc7194>
+2019-08-27 15:29:14,204 - root - INFO - 海妖后台登陆成功，返回token<eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mbyI6eyJlbWFpbCI6IiIsImdtdENyZWF0ZSI6MTQ2MTA4MTE0MDAwMCwiZ210TW9kaWZpZWQiOjE1NDcwNzA4MDEwMDAsImlkIjo5MTQwMTM2LCJpbWFnZSI6Ii8vY2RuMS5zaG93am95LmNvbS9zaG9wL3VzZXJfaGVhZC8yMDE4MDUxNC9YUjhRRkFIOVlSQUVZVkRVVFozQjE1MjYyODM5MzExODAuanBnIiwiaXNFbmFibGUiOnRydWUsImlzRmFrZSI6MCwibmljayI6Iua1t-WmliIsInNleFR5cGUiOiJtIiwidGVsIjoiMTM1NjcxMzY2NTQiLCJ1c2VybmFtZSI6Iua1t-WmliIsImFjY291bnRfdHlwZSI6MSwiYnluYW1lIjoi5rW35aaWIiwicmVhbE5hbWUiOiLmtbflppYiLCJzdXBwbGllcklkIjpbMF19LCJpYXQiOjE1NjY4OTA5NTQsImV4cCI6MTU2NzQ5NTc1NH0.c9m4k1WE3j69fSv5fOchUldCeM8cJy2MzgKMBb-r-vk>
+2019-08-27 15:29:14,214 - root - INFO - 测试用例开始执行
+2019-08-27 15:29:14,257 - root - INFO - 获取用例数据：{'id': 2.0, 'module': '达人圈', 'url': '/api/community/startLive', 'name': '推流成功', 'key': 'app接口', 'param': '{"noteId":"{0}"}', 'place': "sit;talent_circle;SELECT id  from note_info where user_id='8887288' and note_type= 1 ORDER BY gmt_create desc limit 1;", 'way': 'POST', 'expect1': 'isSuccess=1', 'expect2': '【noteid数据库和返回值做校验】', 'expect3': '', 'expect4': ''}
+2019-08-27 15:29:14,257 - root - INFO - 测试用例执行完毕
+2019-08-27 15:29:14,258 - root - INFO - ----------------------------------

@@ -1,0 +1,54 @@
+2019-08-27 15:13:18,856 - root - INFO - 18768278576用户开始登录，返回登录信息b5f99e28-e29d-4bc6-9fb9-fa09eb935667
+2019-08-27 15:13:19,155 - root - INFO - 18768278576登录成功，返回token<60f663ec-0231-40c1-819f-70f7d1842e1b>
+2019-08-27 15:13:19,254 - root - INFO - 海妖后台登陆成功，返回token<eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mbyI6eyJlbWFpbCI6IiIsImdtdENyZWF0ZSI6MTQ2MTA4MTE0MDAwMCwiZ210TW9kaWZpZWQiOjE1NDcwNzA4MDEwMDAsImlkIjo5MTQwMTM2LCJpbWFnZSI6Ii8vY2RuMS5zaG93am95LmNvbS9zaG9wL3VzZXJfaGVhZC8yMDE4MDUxNC9YUjhRRkFIOVlSQUVZVkRVVFozQjE1MjYyODM5MzExODAuanBnIiwiaXNFbmFibGUiOnRydWUsImlzRmFrZSI6MCwibmljayI6Iua1t-WmliIsInNleFR5cGUiOiJtIiwidGVsIjoiMTM1NjcxMzY2NTQiLCJ1c2VybmFtZSI6Iua1t-WmliIsImFjY291bnRfdHlwZSI6MSwiYnluYW1lIjoi5rW35aaWIiwicmVhbE5hbWUiOiLmtbflppYiLCJzdXBwbGllcklkIjpbMF19LCJpYXQiOjE1NjY4ODk5OTksImV4cCI6MTU2NzQ5NDc5OX0.RerS8ZEupOeDqsG6A84b_McGSoo947hsDd1BPDraRuY>
+2019-08-27 15:13:19,262 - root - INFO - 测试用例开始执行
+2019-08-27 15:13:19,290 - root - INFO - 获取用例数据:{'id': 1.0, 'module': '商品支付', 'url': '/shop/confirmorderInfo?addressId=0&cardId=0&itemInfos=169241%3A1&shopInfos=169241%3A796644', 'name': '确认订单信息金额正确', 'key': 'app接口', 'param': 'not argument', 'place': '', 'way': 'GET', 'expect1': 'totalPrice=0.1', 'expect2': 'itemZhName=LILIA雪肌凝时精粹水 120ml ', 'expect3': '', 'expect4': ''}
+2019-08-27 15:13:20,918 - root - INFO - 成功发起GET请求(http://shop.m.showjoy.com.cn/shop/confirmorderInfo?addressId=0&cardId=0&itemInfos=169241%3A1&shopInfos=169241%3A796644)，请求url为：app接口，请求结果code为：200, 请求结果字段为：
+<!doctype html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=320.1, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <meta name="format-detection" content="telephone=no,email=no">
+        <meta name="apple-touch-fullscreen" content="yes">
+        <link rel="dns-prefetch" href="http://cdn1.showjoy.com">
+        <meta name="apple-mobile-web-app-title" content="尚妆网">
+        <link rel="apple-touch-icon" href="http://cdn1.showjoy.com/images/5c/5c0fc2a2999a4f7789ae9fe35e47bb49.png">
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="alexaVerifyID" content="CQ9MFqujDWRsB8dm3rfIrhLYva0" />
+        <meta name="apple-mobile-web-app-title" content="尚妆网">
+        <link rel="apple-touch-icon" href="http://cdn1.showjoy.com/images/5c/5c0fc2a2999a4f7789ae9fe35e47bb49.png">
+        <link rel="stylesheet" type="text/css" href="http://cdn1.showjoy.com/assets/f2e/joyf2e/vendor/0.0.2/gmu/reset.css" />
+		<link rel="stylesheet" type="text/css" href="http://cdn1.showjoy.com/assets/f2e/joyf2e/vendor/0.0.2/gmu/gmu.min.css" />
+        <link href="http://cdn1.showjoy.com/assets/f2e/showjoy-assets/common-m/0.0.4/m-header/m-header.css" rel="stylesheet" />
+		<link href="http://cdn1.showjoy.com/assets/f2e/showjoy-assets/common-m/0.0.4/m-footer/m-footer.min.css" rel="stylesheet" />
+        <script type="text/javascript" src="http://cdn1.showjoy.com/assets/f2e/joyf2e/vendor/0.0.2/gmu/zepto.min.js"></script>
+    	<script type="text/javascript" src="http://cdn1.showjoy.com/assets/f2e/joyf2e/vendor/0.0.2/gmu/gmu.min.js"></script>
+   	 	<script src="http://cdn1.showjoy.com/assets/f2e/showjoy-assets/common-m/0.0.4/m-header/m-header.min.js" type="text/javascript"></script>
+		<script src="http://cdn1.showjoy.com/assets/f2e/showjoy-assets/common-m/0.0.4/m-footer/m-footer.min.js" type="text/javascript"></script>
+        <script src="http://cdn1.showjoy.com/assets/mobile/2.35.0/js/widget/fastclick-min.js"
+        type="text/javascript">
+        </script>
+        <title>
+            登录
+        </title>
+    </head>
+    
+    <body>
+            <input type="hidden" value="http://login.shop.showjoy.com.cn:80/oauth_sign_in/weixin_h5?service=http://shop.m.showjoy.com.cn:80&redirect_uri=%2Fshop%2FconfirmorderInfo%3FaddressId%3D0%26cardId%3D0%26itemInfos%3D169241%253A1%26shopInfos%3D169241%253A796644%26not%2520argument" class="j_Rurl">
+            <script >
+                 Zepto(function(){
+					  var rUrl = $('.j_Rurl').val();
+					  window.location = rUrl;
+					});
+                 
+            </script>
+    </body>
+
+</html>
+2019-08-27 15:13:20,922 - root - INFO - 请求传入数据：url:/shop/confirmorderInfo?addressId=0&cardId=0&itemInfos=169241%3A1&shopInfos=169241%3A796644,key:app接口,参数:not argument,请求方式：GET
+2019-08-27 15:13:20,923 - root - INFO - 测试用例执行完毕
+2019-08-27 15:13:20,924 - root - INFO - ----------------------------------

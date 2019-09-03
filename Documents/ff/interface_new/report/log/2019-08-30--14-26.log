@@ -1,0 +1,39 @@
+2019-08-30 14:26:00,296 - root - INFO - 连接数据库成功
+2019-08-30 14:26:00,305 - root - INFO - 成功登录sit环境数据库：talent_circle，版本为：5.7.25-log，执行SQL：SELECT live_status from talent_circle.note_live_info  where note_id = '1278'
+2019-08-30 14:26:00,321 - root - INFO - 查询结果：1
+2019-08-30 14:26:00,322 - root - INFO - 关注/取关/互关成功，对【isSuccess】断言，断言结果--预期值1==实际值1
+2019-08-30 14:26:00,323 - root - INFO - 对【直播状态】断言,断言结果--预期值1 == 实际值1
+2019-08-30 14:26:00,324 - root - INFO - 测试用例执行完毕
+2019-08-30 14:26:00,325 - root - INFO - ----------------------------------
+2019-08-30 14:26:00,326 - root - INFO - 测试用例开始执行
+2019-08-30 14:26:00,337 - root - INFO - 开始执行测试用例：{'id': 7.0, 'module': '达人圈', 'url': '/api/community/endLive', 'name': '结束直播', 'key': 'app接口', 'param': '{"noteId":{0}}', 'place': "sit;talent_circle;SELECT live_status from talent_circle.note_live_info  where note_id = '{0}';", 'way': 'POST', 'expect1': 'isSuccess=1', 'expect2': 'live_status=0', 'expect3': '', 'expect4': ''}
+2019-08-30 14:26:00,384 - root - INFO - 成功发起POST请求(app接口)，请求结果code为：200, 请求结果字段为：{"count":0,"isRedirect":0,"isSuccess":1,"login":0}
+2019-08-30 14:26:00,385 - root - INFO - 请求传入的数据：url:/api/community/endLive,key:app接口,param:{"noteId":{0}},way:POST
+2019-08-30 14:26:00,483 - root - INFO - 连接数据库成功
+2019-08-30 14:26:00,492 - root - INFO - 成功登录sit环境数据库：talent_circle，版本为：5.7.25-log，执行SQL：SELECT live_status from talent_circle.note_live_info  where note_id = '1278'
+2019-08-30 14:26:00,506 - root - INFO - 查询结果：0
+2019-08-30 14:26:00,507 - root - INFO - 结束直播成功，对【isSuccess】断言，断言结果--预期值1==实际值1
+2019-08-30 14:26:00,508 - root - INFO - 对【直播状态】断言,断言结果--预期值0 == 实际值0
+2019-08-30 14:26:00,508 - root - INFO - 测试用例执行完毕
+2019-08-30 14:26:00,509 - root - INFO - ----------------------------------
+2019-08-30 14:26:00,511 - root - INFO - 测试用例开始执行
+2019-08-30 14:26:00,522 - root - INFO - 测试用例开始执行：{'id': 8.0, 'module': '达人圈', 'url': '/api/community/viewLive?noteId={0}', 'name': '直播结束页', 'key': 'app接口', 'param': 'not argument', 'place': "sit;talent_circle;SELECT live_status from talent_circle.note_live_info  where note_id = '{0}';", 'way': 'GET', 'expect1': 'isSuccess=1', 'expect2': 'live_status=0', 'expect3': '', 'expect4': ''}
+2019-08-30 14:26:00,579 - root - INFO - 成功发起GET请求(http://shop.m.showjoy.com.cn/api/community/viewLive?noteId=1278)，请求url为：app接口，请求结果code为：200, 请求结果字段为：{"count":0,"data":{"endTime":1567146360000,"headImage":"https://cdn1.showjoy.com/images/8b/8b957c862d3249f6938e27d8e9a6c219.png","imageList":["https://git-cdn.oss-cn-hangzhou.aliyuncs.com/shop/community/20190827/NCHPE3E5755S82V5A6J41566871150340-640x427.jpg"],"likeNumber":1,"liveStatus":0,"needBuyVip":0,"shopId":544655,"startTime":1567146354000,"userId":8887288,"userName":"盛夏名字有点长哈哈哈哈","viewers":1},"isRedirect":0,"isSuccess":1,"login":0}
+2019-08-30 14:26:00,580 - root - INFO - 请求传入的数据：url:/api/community/viewLive?noteId={0},key:app接口,param:not argument,way:GET
+2019-08-30 14:26:00,675 - root - INFO - 连接数据库成功
+2019-08-30 14:26:00,685 - root - INFO - 成功登录sit环境数据库：talent_circle，版本为：5.7.25-log，执行SQL：SELECT live_status from talent_circle.note_live_info  where note_id = '1278'
+2019-08-30 14:26:00,699 - root - INFO - 查询结果：0
+2019-08-30 14:26:00,700 - root - INFO - 结束直播成功，对【isSuccess】断言，断言结果--预期值1==实际值1
+2019-08-30 14:26:00,701 - root - INFO - 对【直播状态】断言,断言结果--预期值0 == 实际值0
+2019-08-30 14:26:00,703 - root - INFO - 测试用例执行完毕
+2019-08-30 14:26:00,705 - root - INFO - ----------------------------------
+2019-08-30 14:26:00,706 - root - INFO - 测试用例开始执行
+2019-08-30 14:26:00,717 - root - INFO - 测试用例开始执行：{'id': 9.0, 'module': '达人圈', 'url': '/api/community/removeNote?noteId={0}', 'name': '删除直播内容', 'key': 'app接口', 'param': 'not argument', 'place': "sit;talent_circle;select COUNT(*) from talent_circle.note_info_shadow where note_id = '{0}';", 'way': 'GET', 'expect1': 'msg=删除成功', 'expect2': 'COUNT(*)=1', 'expect3': '', 'expect4': ''}
+2019-08-30 14:26:00,780 - root - INFO - 成功发起GET请求(http://shop.m.showjoy.com.cn/api/community/removeNote?noteId=1278)，请求url为：app接口，请求结果code为：200, 请求结果字段为：{"count":0,"isRedirect":0,"isSuccess":1,"login":0,"msg":"删除成功"}
+2019-08-30 14:26:00,781 - root - INFO - 请求传入的数据：url:/api/community/removeNote?noteId={0},param:not argument,way:GET,key:app接口
+2019-08-30 14:26:00,878 - root - INFO - 连接数据库成功
+2019-08-30 14:26:00,887 - root - INFO - 成功登录sit环境数据库：talent_circle，版本为：5.7.25-log，执行SQL：select COUNT(*) from talent_circle.note_info_shadow where note_id = '1278'
+2019-08-30 14:26:00,901 - root - INFO - 查询结果：1
+2019-08-30 14:26:00,902 - root - INFO - 删除直播成功，对【msg】断言，断言结果--预期值删除成功==实际值删除成功
+2019-08-30 14:26:00,903 - root - INFO - 测试用例执行完毕
+2019-08-30 14:26:00,904 - root - INFO - ----------------------------------

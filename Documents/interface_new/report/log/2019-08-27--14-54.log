@@ -1,0 +1,14 @@
+2019-08-27 14:54:16,995 - root - INFO - 18768278576用户开始登录，返回登录信息b5f99e28-e29d-4bc6-9fb9-fa09eb935667
+2019-08-27 14:54:17,311 - root - INFO - 18768278576登录成功，返回token<f55ebb31-a96b-4eb2-a173-5d6305f1aa7c>
+2019-08-27 14:54:17,425 - root - INFO - 海妖后台登陆成功，返回token<eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mbyI6eyJlbWFpbCI6IiIsImdtdENyZWF0ZSI6MTQ2MTA4MTE0MDAwMCwiZ210TW9kaWZpZWQiOjE1NDcwNzA4MDEwMDAsImlkIjo5MTQwMTM2LCJpbWFnZSI6Ii8vY2RuMS5zaG93am95LmNvbS9zaG9wL3VzZXJfaGVhZC8yMDE4MDUxNC9YUjhRRkFIOVlSQUVZVkRVVFozQjE1MjYyODM5MzExODAuanBnIiwiaXNFbmFibGUiOnRydWUsImlzRmFrZSI6MCwibmljayI6Iua1t-WmliIsInNleFR5cGUiOiJtIiwidGVsIjoiMTM1NjcxMzY2NTQiLCJ1c2VybmFtZSI6Iua1t-WmliIsImFjY291bnRfdHlwZSI6MSwiYnluYW1lIjoi5rW35aaWIiwicmVhbE5hbWUiOiLmtbflppYiLCJzdXBwbGllcklkIjpbMF19LCJpYXQiOjE1NjY4ODg4NTcsImV4cCI6MTU2NzQ5MzY1N30.7a7MkJNtM1xVl4GjabH8wFjuQSXIVQCycApMQsYp6Lw>
+2019-08-27 14:54:17,436 - root - INFO - 测试用例开始执行
+2019-08-27 14:54:17,477 - root - INFO - 获取用例数据：{'id': 2.0, 'module': '达人圈', 'url': '/api/community/startLive', 'name': '推流成功', 'key': 'app接口', 'param': '{"noteId":"{0}"}', 'place': "sit;talent_circle;SELECT id  from note_info where user_id='8887288' and note_type= 1 ORDER BY gmt_create desc limit 1;", 'way': 'POST', 'expect1': 'isSuccess=1', 'expect2': '【noteid数据库和返回值做校验】', 'expect3': '', 'expect4': ''}
+2019-08-27 14:54:17,478 - root - INFO - 测试用例执行完毕
+2019-08-27 14:54:17,478 - root - INFO - ----------------------------------
+2019-08-27 14:54:36,822 - root - INFO - 18768278576用户开始登录，返回登录信息b5f99e28-e29d-4bc6-9fb9-fa09eb935667
+2019-08-27 14:54:37,111 - root - INFO - 18768278576登录成功，返回token<3ad76613-64e1-4f4a-877b-6b3dcc737b81>
+2019-08-27 14:54:37,213 - root - INFO - 海妖后台登陆成功，返回token<eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mbyI6eyJlbWFpbCI6IiIsImdtdENyZWF0ZSI6MTQ2MTA4MTE0MDAwMCwiZ210TW9kaWZpZWQiOjE1NDcwNzA4MDEwMDAsImlkIjo5MTQwMTM2LCJpbWFnZSI6Ii8vY2RuMS5zaG93am95LmNvbS9zaG9wL3VzZXJfaGVhZC8yMDE4MDUxNC9YUjhRRkFIOVlSQUVZVkRVVFozQjE1MjYyODM5MzExODAuanBnIiwiaXNFbmFibGUiOnRydWUsImlzRmFrZSI6MCwibmljayI6Iua1t-WmliIsInNleFR5cGUiOiJtIiwidGVsIjoiMTM1NjcxMzY2NTQiLCJ1c2VybmFtZSI6Iua1t-WmliIsImFjY291bnRfdHlwZSI6MSwiYnluYW1lIjoi5rW35aaWIiwicmVhbE5hbWUiOiLmtbflppYiLCJzdXBwbGllcklkIjpbMF19LCJpYXQiOjE1NjY4ODg4NzcsImV4cCI6MTU2NzQ5MzY3N30.R6lX_PdxbY_U02T4wrix_7_tdH1KWYQfK9Mxy90znoE>
+2019-08-27 14:54:37,226 - root - INFO - 测试用例开始执行
+2019-08-27 14:54:37,261 - root - INFO - 获取用例数据：{'id': 2.0, 'module': '达人圈', 'url': '/api/community/startLive', 'name': '推流成功', 'key': 'app接口', 'param': '{"noteId":"{0}"}', 'place': "sit;talent_circle;SELECT id  from note_info where user_id='8887288' and note_type= 1 ORDER BY gmt_create desc limit 1;", 'way': 'POST', 'expect1': 'isSuccess=1', 'expect2': '【noteid数据库和返回值做校验】', 'expect3': '', 'expect4': ''}
+2019-08-27 14:54:37,262 - root - INFO - 测试用例执行完毕
+2019-08-27 14:54:37,262 - root - INFO - ----------------------------------

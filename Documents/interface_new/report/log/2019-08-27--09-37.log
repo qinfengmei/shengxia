@@ -1,0 +1,114 @@
+2019-08-27 09:37:00,506 - root - INFO - 成功发起POST请求(app接口)，请求结果code为：200, 请求结果字段为：{"count":0,"data":{"noteId":1204,"noteUserName":"张砚程5tw69v"},"isRedirect":0,"isSuccess":1,"login":0,"msg":"发布成功"}
+2019-08-27 09:37:00,507 - root - INFO - 请求传入数据：url:/api/community/publishNote,key:app接口,参数:{"images": "https://git-cdn.oss-cn-hangzhou.aliyuncs.com/shop/community/20190529/NYL7HAW7JDGJOIT6RWU41559108170201-400x232.jpg", "watermark": "true", "content": "东西用起来好用，价格实惠", "spuId": "191966"},请求方式：POST
+2019-08-27 09:37:00,508 - root - INFO - 对【isSuccess】断言,断言结果--预期值1 == 实际值1
+2019-08-27 09:37:00,509 - root - INFO - 对【发布结果】断言,断言结果--预期值发布成功 == 实际值发布成功
+2019-08-27 09:37:00,510 - root - INFO - 测试用例执行完毕
+2019-08-27 09:37:00,511 - root - INFO - ----------------------------------
+2019-08-27 09:37:00,512 - root - INFO - 测试用例开始执行
+2019-08-27 09:37:00,805 - root - INFO - 连接数据库成功
+2019-08-27 09:37:00,819 - root - INFO - 成功登录sit环境数据库：talent_circle，版本为：5.7.25-log，执行SQL：select id from note_info where user_id = '9140158' order by gmt_create desc LIMIT 1
+2019-08-27 09:37:00,833 - root - INFO - 查询结果：1204
+2019-08-27 09:37:00,834 - root - INFO - 获取用例数据:{'id': 25.0, 'module': '达人圈', 'url': '/api/community/getUserPublish?pageSize=10&page=1&userId=9140158', 'name': '获取个人发布内容', 'key': 'app接口', 'param': 'not argument', 'place': "sit;talent_circle;select id from note_info where user_id = '9140158' order by gmt_create desc LIMIT 1", 'way': 'GET', 'expect1': 'content=东西用起来好用，价格实惠', 'expect2': '【noteid数据库和返回值做校验】', 'expect3': '', 'expect4': ''}
+2019-08-27 09:37:00,979 - root - INFO - 成功发起GET请求(http://shop.m.showjoy.com.cn/api/community/getUserPublish?pageSize=10&page=1&userId=9140158)，请求url为：app接口，请求结果code为：200, 请求结果字段为：{"count":0,"data":[{"allowEdit":true,"currentUser":{"currentShopId":0,"headImage":"//thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKWBIdOvJs5fnVJYI6UfiatqZeoKC3Xy5xckJa9gsW8LCSf9aialnmD4sJMoeqkYlqPlumqiaxgEqMhQ/132","userId":9140158,"userName":"张砚程5tw69v"},"noteBaseInfo":{"collectionCount":0,"collectionStatus":0,"content":"东西用起来好用，价格实惠","imageList":["https://git-cdn.oss-cn-hangzhou.aliyuncs.com/shop/community/20190529/NYL7HAW7JDGJOIT6RWU41559108170201-400x232.jpg"],"include":false,"likeCount":0,"likeStatus":0,"noteId":1204,"noteStatus":0,"noteType":0,"publicTime":"2019-08-27 09:37:00","shareCount":0,"userId":9140158,"watermark":true},"recommendInfo":{"id":191966,"noteId":1204,"spuPrice":10,"thumbnail":"https://cdn1.showjoy.com/shop/product/20180330/MEXAM8RZSLC9UOZ33D2M1522400950994.png","title":"[LILIA]雪肌凝时精粹水 120ml ","type":1},"userInfoVO":{"currentShopId":0,"followStatus":-1,"headImage":"//thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKWBIdOvJs5fnVJYI6UfiatqZeoKC3Xy5xckJa9gsW8LCSf9aialnmD4sJMoeqkYlqPlumqiaxgEqMhQ/132","inviteCode":"nvpcw8t","position":0,"shopId":797051,"userId":9140158,"userName":"张砚程5tw69v","userType":1}},{"allowEdit":true,"currentUser":{"currentShopId":0,"headImage":"//thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKWBIdOvJs5fnVJYI6UfiatqZeoKC3Xy5xckJa9gsW8LCSf9aialnmD4sJMoeqkYlqPlumqiaxgEqMhQ/132","userId":9140158,"userName":"张砚程5tw69v"},"noteBaseInfo":{"collectionCount":0,"collectionStatus":0,"content":"东西用起来好用，价格实惠","imageList":["https://git-cdn.oss-cn-hangzhou.aliyuncs.com/shop/community/20190529/NYL7HAW7JDGJOIT6RWU41559108170201-400x232.jpg"],"include":false,"likeCount":0,"likeStatus":0,"noteId":1202,"noteStatus":0,"noteType":0,"publicTime":"2019-08-25 13:37:10","shareCount":0,"userId":9140158,"watermark":true},"recommendInfo":{"id":191966,"noteId":1202,"spuPrice":10,"thumbnail":"https://cdn1.showjoy.com/shop/product/20180330/MEXAM8RZSLC9UOZ33D2M1522400950994.png","title":"[LILIA]雪肌凝时精粹水 120ml ","type":1},"userInfoVO":{"currentShopId":0,"followStatus":-1,"headImage":"//thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKWBIdOvJs5fnVJYI6UfiatqZeoKC3Xy5xckJa9gsW8LCSf9aialnmD4sJMoeqkYlqPlumqiaxgEqMhQ/132","inviteCode":"nvpcw8t","position":0,"shopId":797051,"userId":9140158,"userName":"张砚程5tw69v","userType":1}},{"allowEdit":true,"currentUser":{"currentShopId":0,"headImage":"//thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKWBIdOvJs5fnVJYI6UfiatqZeoKC3Xy5xckJa9gsW8LCSf9aialnmD4sJMoeqkYlqPlumqiaxgEqMhQ/132","userId":9140158,"userName":"张砚程5tw69v"},"noteBaseInfo":{"collectionCount":0,"collectionStatus":0,"content":"东西用起来好用，价格实惠","imageList":["https://git-cdn.oss-cn-hangzhou.aliyuncs.com/shop/community/20190529/NYL7HAW7JDGJOIT6RWU41559108170201-400x232.jpg"],"include":false,"likeCount":0,"likeStatus":0,"noteId":241,"noteStatus":0,"noteType":0,"publicTime":"2019-06-26 16:46:18","shareCount":0,"userId":9140158,"watermark":true},"recommendInfo":{"id":191966,"noteId":241,"spuPrice":10,"thumbnail":"https://cdn1.showjoy.com/shop/product/20180330/MEXAM8RZSLC9UOZ33D2M1522400950994.png","title":"[LILIA]雪肌凝时精粹水 120ml ","type":1},"userInfoVO":{"currentShopId":0,"followStatus":-1,"headImage":"//thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKWBIdOvJs5fnVJYI6UfiatqZeoKC3Xy5xckJa9gsW8LCSf9aialnmD4sJMoeqkYlqPlumqiaxgEqMhQ/132","inviteCode":"nvpcw8t","position":0,"shopId":797051,"userId":9140158,"userName":"张砚程5tw69v","userType":1}},{"allowEdit":true,"currentUser":{"currentShopId":0,"headImage":"//thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKWBIdOvJs5fnVJYI6UfiatqZeoKC3Xy5xckJa9gsW8LCSf9aialnmD4sJMoeqkYlqPlumqiaxgEqMhQ/132","userId":9140158,"userName":"张砚程5tw69v"},"noteBaseInfo":{"collectionCount":0,"collectionStatus":0,"content":"东西用起来好用，价格实惠","imageList":["https://git-cdn.oss-cn-hangzhou.aliyuncs.com/shop/community/20190529/NYL7HAW7JDGJOIT6RWU41559108170201-400x232.jpg"],"include":false,"likeCount":0,"likeStatus":0,"noteId":240,"noteStatus":0,"noteType":0,"publicTime":"2019-06-26 16:45:41","shareCount":0,"userId":9140158,"watermark":true},"recommendInfo":{"id":191966,"noteId":240,"spuPrice":10,"thumbnail":"https://cdn1.showjoy.com/shop/product/20180330/MEXAM8RZSLC9UOZ33D2M1522400950994.png","title":"[LILIA]雪肌凝时精粹水 120ml ","type":1},"userInfoVO":{"currentShopId":0,"followStatus":-1,"headImage":"//thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKWBIdOvJs5fnVJYI6UfiatqZeoKC3Xy5xckJa9gsW8LCSf9aialnmD4sJMoeqkYlqPlumqiaxgEqMhQ/132","inviteCode":"nvpcw8t","position":0,"shopId":797051,"userId":9140158,"userName":"张砚程5tw69v","userType":1}}],"isRedirect":0,"isSuccess":1,"login":0}
+2019-08-27 09:37:00,985 - root - INFO - 请求传入数据：url:/api/community/getUserPublish?pageSize=10&page=1&userId=9140158,key:app接口,参数:not argument,请求方式：GET
+2019-08-27 09:37:00,986 - root - INFO - 对【发布内容】断言,断言结果--预期值东西用起来好用，价格实惠 == 实际值东西用起来好用，价格实惠
+2019-08-27 09:37:00,987 - root - INFO - 对【发布内容id】断言,断言结果--预期值1204 == 实际值1204
+2019-08-27 09:37:00,988 - root - INFO - 测试用例执行完毕
+2019-08-27 09:37:00,988 - root - INFO - ----------------------------------
+2019-08-27 09:37:00,989 - root - INFO - 测试用例开始执行
+2019-08-27 09:37:01,005 - root - INFO - 获取用例数据:{'id': 26.0, 'module': '达人圈', 'url': '/api/community/like?noteId={0}&userId=9140158', 'name': '点赞内容', 'key': 'app接口', 'param': 'not argument', 'place': "sit;talent_circle;select like_num from interaction_info where note_id = '{0}'", 'way': 'GET', 'expect1': 'isSuccess=1', 'expect2': 'like_num=1', 'expect3': '', 'expect4': ''}
+2019-08-27 09:37:01,163 - root - INFO - 成功发起GET请求(http://shop.m.showjoy.com.cn/api/community/like?noteId=1204&userId=9140158)，请求url为：app接口，请求结果code为：200, 请求结果字段为：{"count":0,"isRedirect":0,"isSuccess":1,"login":0}
+2019-08-27 09:37:01,165 - root - INFO - 请求传入数据：url:/api/community/like?noteId={0}&userId=9140158,key:app接口,参数:not argument,请求方式：GET
+2019-08-27 09:37:02,285 - root - INFO - 连接数据库成功
+2019-08-27 09:37:02,299 - root - INFO - 成功登录sit环境数据库：talent_circle，版本为：5.7.25-log，执行SQL：select like_num from interaction_info where note_id = '1204'
+2019-08-27 09:37:02,314 - root - INFO - 查询结果：1
+2019-08-27 09:37:02,315 - root - INFO - 点赞成功，对【isSuccess】断言,断言结果--预期值1 == 实际值1
+2019-08-27 09:37:02,316 - root - INFO - 对【点赞状态】断言,断言结果--预期值1 == 实际值1
+2019-08-27 09:37:02,317 - root - INFO - 测试用例执行完毕
+2019-08-27 09:37:02,318 - root - INFO - ----------------------------------
+2019-08-27 09:37:02,319 - root - INFO - 测试用例开始执行
+2019-08-27 09:37:02,335 - root - INFO - 获取用例数据:{'id': 27.0, 'module': '达人圈', 'url': '/api/community/collection?noteId={0}&userId=9140158', 'name': '收藏内容', 'key': 'app接口', 'param': 'not argument', 'place': "sit;talent_circle;select collect_num from interaction_info where note_id = '{0}'", 'way': 'GET', 'expect1': 'isSuccess=1', 'expect2': 'collect_num=1', 'expect3': '', 'expect4': ''}
+2019-08-27 09:37:02,389 - root - INFO - 成功发起GET请求(http://shop.m.showjoy.com.cn/api/community/collection?noteId=1204&userId=9140158)，请求url为：app接口，请求结果code为：200, 请求结果字段为：{"count":0,"isRedirect":0,"isSuccess":1,"login":0}
+2019-08-27 09:37:02,389 - root - INFO - 请求传入数据：url:/api/community/collection?noteId={0}&userId=9140158,key:app接口,参数:not argument,请求方式：GET
+2019-08-27 09:37:03,538 - root - INFO - 连接数据库成功
+2019-08-27 09:37:03,553 - root - INFO - 成功登录sit环境数据库：talent_circle，版本为：5.7.25-log，执行SQL：select collect_num from interaction_info where note_id = '1204'
+2019-08-27 09:37:03,574 - root - INFO - 查询结果：1
+2019-08-27 09:37:03,575 - root - INFO - 收藏成功，对【isSuccess】断言,断言结果--预期值1 == 实际值1
+2019-08-27 09:37:03,576 - root - INFO - 对【收藏状态】断言,断言结果--预期值1 == 实际值1
+2019-08-27 09:37:03,577 - root - INFO - 测试用例执行完毕
+2019-08-27 09:37:03,578 - root - INFO - ----------------------------------
+2019-08-27 09:37:03,580 - root - INFO - 测试用例开始执行
+2019-08-27 09:37:03,595 - root - INFO - 获取用例数据:{'id': 28.0, 'module': '达人圈', 'url': '/api/community/follow?userId=2058376', 'name': '关注他人', 'key': 'app接口', 'param': 'not argument', 'place': '', 'way': 'GET', 'expect1': 'isSuccess=1', 'expect2': 'data=1', 'expect3': '', 'expect4': ''}
+2019-08-27 09:37:03,654 - root - INFO - 成功发起GET请求(http://shop.m.showjoy.com.cn/api/community/follow?userId=2058376)，请求url为：app接口，请求结果code为：200, 请求结果字段为：{"count":0,"data":1,"isRedirect":0,"isSuccess":1,"login":0}
+2019-08-27 09:37:03,655 - root - INFO - 请求传入数据：url:/api/community/follow?userId=2058376,key:app接口,参数:not argument,请求方式：GET
+2019-08-27 09:37:03,656 - root - INFO - 关注成功，对【isSuccess】断言,断言结果--预期值1 == 实际值1
+2019-08-27 09:37:03,657 - root - INFO - 对【已关注人数】断言,断言结果--预期值1 == 实际值1
+2019-08-27 09:37:03,658 - root - INFO - 测试用例执行完毕
+2019-08-27 09:37:03,658 - root - INFO - ----------------------------------
+2019-08-27 09:37:03,659 - root - INFO - 测试用例开始执行
+2019-08-27 09:37:03,677 - root - INFO - 获取用例数据:{'id': 29.0, 'module': '达人圈', 'url': '/api/community/getFollowList?pageSize=10&page=1&userId=9140158', 'name': '查看已关注的用户信息', 'key': 'app接口', 'param': 'not argument', 'place': '', 'way': 'GET', 'expect1': 'userName=盛夏是官方小达', 'expect2': 'shopId=796496', 'expect3': '', 'expect4': ''}
+2019-08-27 09:37:03,757 - root - INFO - 成功发起GET请求(http://shop.m.showjoy.com.cn/api/community/getFollowList?pageSize=10&page=1&userId=9140158)，请求url为：app接口，请求结果code为：200, 请求结果字段为：{"count":0,"data":[{"currentShopId":0,"followStatus":1,"headImage":"https://git-cdn.oss-cn-hangzhou.aliyuncs.com/shop/user_head/20190422/GVXZX6W8O94UAU6IQGHG1555916003729.jpg","inviteCode":"n4t5wbz","position":0,"shopId":796496,"userId":2058376,"userName":"盛夏是官方小达","userType":2},{"currentShopId":0,"followStatus":1,"headImage":"https://cdn1.showjoy.com/images/8b/8b957c862d3249f6938e27d8e9a6c219.png","inviteCode":"jxv3wg4","position":1,"shopId":544655,"userId":8887288,"userName":"盛夏名字有点长哈哈哈哈","userType":3},{"currentShopId":0,"followStatus":2,"headImage":"https://git-cdn.oss-cn-hangzhou.aliyuncs.com/shop/user_head/20190813/EAHM9IVQD7O4MYM7H7YP1565678092662.png","inviteCode":"n4nfwsi","position":0,"shopId":796534,"userId":9140209,"userName":"喝酸奶舔下盖又名有点","userType":1}],"isRedirect":0,"isSuccess":1,"login":0}
+2019-08-27 09:37:03,759 - root - INFO - 请求传入数据：url:/api/community/getFollowList?pageSize=10&page=1&userId=9140158,key:app接口,参数:not argument,请求方式：GET
+2019-08-27 09:37:03,760 - root - INFO - 对【用户名】断言,断言结果--预期值盛夏是官方小达 == 实际值盛夏是官方小达
+2019-08-27 09:37:03,760 - root - INFO - 对【店铺id】断言,断言结果--预期值796496 == 实际值796496
+2019-08-27 09:37:03,761 - root - INFO - 测试用例执行完毕
+2019-08-27 09:37:03,762 - root - INFO - ----------------------------------
+2019-08-27 09:37:03,763 - root - INFO - 测试用例开始执行
+2019-08-27 09:37:03,885 - root - INFO - 连接数据库成功
+2019-08-27 09:37:03,900 - root - INFO - 成功登录sit环境数据库：talent_circle，版本为：5.7.25-log，执行SQL：select sum(collect_num),sum(like_num),sum(share_num) from interaction_info where note_id in (select note_id from note_info_shadow where user_id = '9140158') or note_id in (select id from note_info where user_id = '9140158')
+
+2019-08-27 09:37:03,974 - root - INFO - sql查询结果：((Decimal('1'), Decimal('1'), Decimal('0')),)
+2019-08-27 09:37:03,976 - root - INFO - 测试用例执行完毕
+2019-08-27 09:37:03,977 - root - INFO - ----------------------------------
+2019-08-27 09:37:03,980 - root - INFO - 测试用例开始执行
+2019-08-27 09:37:03,996 - root - INFO - 获取用例数据:{'id': 31.0, 'module': '达人圈', 'url': '/api/community/like?noteId={0}&userId=9140158', 'name': '取消点赞', 'key': 'app接口', 'param': 'not argument', 'place': "sit;talent_circle;select like_num from interaction_info where note_id = '{0}'", 'way': 'GET', 'expect1': 'isSuccess=1', 'expect2': 'like_num=0', 'expect3': '', 'expect4': ''}
+2019-08-27 09:37:04,055 - root - INFO - 成功发起GET请求(http://shop.m.showjoy.com.cn/api/community/like?noteId=1204&userId=9140158)，请求url为：app接口，请求结果code为：200, 请求结果字段为：{"count":0,"isRedirect":0,"isSuccess":1,"login":0}
+2019-08-27 09:37:04,056 - root - INFO - 请求传入数据：url:/api/community/like?noteId={0}&userId=9140158,key:app接口,参数:not argument,请求方式：GET
+2019-08-27 09:37:05,192 - root - INFO - 连接数据库成功
+2019-08-27 09:37:05,204 - root - INFO - 成功登录sit环境数据库：talent_circle，版本为：5.7.25-log，执行SQL：select like_num from interaction_info where note_id = '1204'
+2019-08-27 09:37:05,218 - root - INFO - 查询结果：0
+2019-08-27 09:37:05,218 - root - INFO - 取消点赞，对【isSuccess】断言,断言结果--预期值1 == 实际值1
+2019-08-27 09:37:05,219 - root - INFO - 对【点赞状态】断言,断言结果--预期值0 == 实际值0
+2019-08-27 09:37:05,219 - root - INFO - 测试用例执行完毕
+2019-08-27 09:37:05,220 - root - INFO - ----------------------------------
+2019-08-27 09:37:05,220 - root - INFO - 测试用例开始执行
+2019-08-27 09:37:05,233 - root - INFO - 获取用例数据:{'id': 32.0, 'module': '达人圈', 'url': '/api/community/collection?noteId={0}&userId=9140158', 'name': '取消收藏', 'key': 'app接口', 'param': 'not argument', 'place': "sit;talent_circle;select collect_num from interaction_info where note_id = '{0}'", 'way': 'GET', 'expect1': 'isSuccess=1', 'expect2': 'collect_num=0', 'expect3': '', 'expect4': ''}
+2019-08-27 09:37:05,285 - root - INFO - 成功发起GET请求(http://shop.m.showjoy.com.cn/api/community/collection?noteId=1204&userId=9140158)，请求url为：app接口，请求结果code为：200, 请求结果字段为：{"count":0,"isRedirect":0,"isSuccess":1,"login":0}
+2019-08-27 09:37:05,286 - root - INFO - 请求传入数据：url:/api/community/collection?noteId={0}&userId=9140158,key:app接口,参数:not argument,请求方式：GET
+2019-08-27 09:37:06,408 - root - INFO - 连接数据库成功
+2019-08-27 09:37:06,423 - root - INFO - 成功登录sit环境数据库：talent_circle，版本为：5.7.25-log，执行SQL：select collect_num from interaction_info where note_id = '1204'
+2019-08-27 09:37:06,437 - root - INFO - 查询结果：0
+2019-08-27 09:37:06,438 - root - INFO - 取消收藏，对【isSuccess】断言,断言结果--预期值1 == 实际值1
+2019-08-27 09:37:06,439 - root - INFO - 对【收藏状态】断言,断言结果--预期值0 == 实际值0
+2019-08-27 09:37:06,440 - root - INFO - 测试用例执行完毕
+2019-08-27 09:37:06,441 - root - INFO - ----------------------------------
+2019-08-27 09:37:06,442 - root - INFO - 测试用例开始执行
+2019-08-27 09:37:06,459 - root - INFO - 获取用例数据:{'id': 33.0, 'module': '达人圈', 'url': '/api/community/follow?userId=2058376', 'name': '取消关注', 'key': 'app接口', 'param': 'not argument', 'place': '', 'way': 'GET', 'expect1': 'isSuccess=1', 'expect2': 'data=0', 'expect3': '', 'expect4': ''}
+2019-08-27 09:37:06,512 - root - INFO - 成功发起GET请求(http://shop.m.showjoy.com.cn/api/community/follow?userId=2058376)，请求url为：app接口，请求结果code为：200, 请求结果字段为：{"count":0,"data":0,"isRedirect":0,"isSuccess":1,"login":0}
+2019-08-27 09:37:06,514 - root - INFO - 请求传入数据：url:/api/community/follow?userId=2058376,key:app接口,参数:not argument,请求方式：GET
+2019-08-27 09:37:06,515 - root - INFO - 取消关注，对【isSuccess】断言,断言结果--预期值1 == 实际值1
+2019-08-27 09:37:06,515 - root - INFO - 对【已关注人数】断言,断言结果--预期值0 == 实际值0
+2019-08-27 09:37:06,516 - root - INFO - 测试用例执行完毕
+2019-08-27 09:37:06,517 - root - INFO - ----------------------------------
+2019-08-27 09:37:06,518 - root - INFO - 测试用例开始执行
+2019-08-27 09:37:06,539 - root - INFO - 获取用例数据:{'id': 34.0, 'module': '达人圈', 'url': '/api/community/comment', 'name': '发表评论', 'key': 'app接口', 'param': '{"noteId": "{0}" , "userId": "9140391", "content": "非常好"}', 'place': "sit;talent_circle;select comment_text from comments where user_id = '9140158' order by gmt_create desc LIMIT 1", 'way': 'POST', 'expect1': 'comment_text=非常好', 'expect2': '【第多少条评论】', 'expect3': '', 'expect4': ''}
+2019-08-27 09:37:06,677 - root - INFO - 成功发起POST请求(app接口)，请求结果code为：200, 请求结果字段为：{"count":0,"data":4361,"isRedirect":0,"isSuccess":1,"login":0}
+2019-08-27 09:37:06,678 - root - INFO - 请求传入数据：url:/api/community/comment,key:app接口,参数:{"noteId": "{0}" , "userId": "9140391", "content": "非常好"},请求方式：POST
+2019-08-27 09:37:06,794 - root - INFO - 连接数据库成功
+2019-08-27 09:37:06,806 - root - INFO - 成功登录sit环境数据库：talent_circle，版本为：5.7.25-log，执行SQL：select comment_text from comments where user_id = '9140158' order by gmt_create desc LIMIT 1
+2019-08-27 09:37:06,823 - root - INFO - 查询结果：非常好
+2019-08-27 09:37:06,824 - root - INFO - 对【评论内容】断言,断言结果--预期值非常好 == 实际值非常好
+2019-08-27 09:37:06,825 - root - INFO - 已发送【4361】条评论
+2019-08-27 09:37:06,826 - root - INFO - 测试用例执行完毕
+2019-08-27 09:37:06,827 - root - INFO - ----------------------------------
+2019-08-27 09:37:06,828 - root - INFO - 测试用例开始执行
+2019-08-27 09:37:06,843 - root - INFO - 获取用例数据:{'id': 35.0, 'module': '达人圈', 'url': '/api/community/removeNote?noteId={0}', 'name': '删除发布内容', 'key': 'app接口', 'param': 'not argument', 'place': "sit;talent_circle;select COUNT(*) from note_info_shadow where note_id = '{0}'", 'way': 'GET', 'expect1': 'msg=删除成功', 'expect2': 'COUNT(*)=1', 'expect3': '', 'expect4': ''}
+2019-08-27 09:37:06,898 - root - INFO - 成功发起GET请求(http://shop.m.showjoy.com.cn/api/community/removeNote?noteId=1204)，请求url为：app接口，请求结果code为：200, 请求结果字段为：{"count":0,"isRedirect":0,"isSuccess":1,"login":0,"msg":"删除成功"}
+2019-08-27 09:37:06,899 - root - INFO - 请求传入数据：url:/api/community/removeNote?noteId={0},key:app接口,参数:not argument,请求方式：GET
+2019-08-27 09:37:07,013 - root - INFO - 连接数据库成功
+2019-08-27 09:37:07,027 - root - INFO - 成功登录sit环境数据库：talent_circle，版本为：5.7.25-log，执行SQL：select COUNT(*) from note_info_shadow where note_id = '1204'
+2019-08-27 09:37:07,043 - root - INFO - 查询结果：1
+2019-08-27 09:37:07,044 - root - INFO - 删除成功，对【删除结果】断言,断言结果--预期值删除成功 == 实际值删除成功
+2019-08-27 09:37:07,045 - root - INFO - 对【删除数】断言,断言结果--预期值1 == 实际值1
+2019-08-27 09:37:07,046 - root - INFO - 测试用例执行完毕
+2019-08-27 09:37:07,047 - root - INFO - ----------------------------------
