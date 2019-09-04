@@ -1,0 +1,21 @@
+2019-08-29 15:50:00,966 - root - INFO - 加入成功，对【isSuccess】断言,断言结果--预期值1 == 实际值1
+2019-08-29 15:50:00,968 - root - INFO - 对【加入状态】断言,断言结果--预期值rtmp://playlive.showjoy.com/live/88872881567064997?txSecret=f30a28c1b62d37eb1e29a7d2c2229194&txTime=5D68D525 == 实际值rtmp://playlive.showjoy.com/live/88872881567064997?txSecret=f30a28c1b62d37eb1e29a7d2c2229194&txTime=5D68D525
+2019-08-29 15:50:00,969 - root - INFO - 测试用例执行完毕
+2019-08-29 15:50:00,970 - root - INFO - ----------------------------------
+2019-08-29 15:50:00,971 - root - INFO - 测试用例开始执行
+2019-08-29 15:50:00,982 - root - INFO - 获取测试用例：{'id': 5.0, 'module': '达人圈', 'url': '/api/community/likeLive', 'name': '观众对直播进行点赞', 'key': '直播观众', 'param': '{"noteId":{0}}', 'place': "sit;talent_circle;SELECT live_status from talent_circle.note_live_info  where note_id = '{0}';", 'way': 'POST', 'expect1': 'isSuccess=1', 'expect2': 'live_status=1', 'expect3': '', 'expect4': ''}
+2019-08-29 15:50:01,038 - root - INFO - 成功发起POST请求(直播观众)，请求结果code为：200, 请求结果字段为：{"count":0,"isRedirect":0,"isSuccess":1,"login":0}
+2019-08-29 15:50:01,040 - root - INFO - 请求传入的数据：url:/api/community/likeLive,way:POST,param:{"noteId":{0}},key:直播观众
+2019-08-29 15:50:02,144 - root - INFO - 连接数据库成功
+2019-08-29 15:50:02,153 - root - INFO - 成功登录sit环境数据库：talent_circle，版本为：5.7.25-log，执行SQL：SELECT live_status from talent_circle.note_live_info  where note_id = '1247'
+2019-08-29 15:50:02,167 - root - INFO - 查询结果：1
+2019-08-29 15:50:02,169 - root - INFO - 点赞成功，对【isSuccess】断言，断言结果--预期值1==实际值1
+2019-08-29 15:50:02,170 - root - INFO - 对【直播状态】断言,断言结果--预期值1 == 实际值1
+2019-08-29 15:50:02,171 - root - INFO - 测试用例执行完毕
+2019-08-29 15:50:02,172 - root - INFO - ----------------------------------
+2019-08-29 15:50:02,173 - root - INFO - 测试用例开始执行
+2019-08-29 15:50:02,184 - root - INFO - 开始执行测试用例:{'id': 6.0, 'module': '达人圈', 'url': '/api/community/follow?userId=8327650', 'name': '观众对主播关注状态的变化', 'key': '直播观众', 'param': 'not argument', 'place': "sit;talent_circle;SELECT live_status from talent_circle.note_live_info  where note_id = '{0}';", 'way': 'GET', 'expect1': 'isSuccess=1', 'expect2': 'live_status=1', 'expect3': '', 'expect4': ''}
+2019-08-29 15:50:02,184 - root - ERROR - 接口类型填写错误
+2019-08-29 15:50:02,185 - root - ERROR - get请求出错，出错原因:'NoneType' object is not subscriptable
+2019-08-29 15:50:02,186 - root - INFO - 测试用例执行完毕
+2019-08-29 15:50:02,186 - root - INFO - ----------------------------------

@@ -1,0 +1,9 @@
+2019-08-29 09:35:09,718 - root - INFO - 18768278576用户开始登录，返回登录信息b5f99e28-e29d-4bc6-9fb9-fa09eb935667
+2019-08-29 09:35:10,320 - root - INFO - 18768278576登录成功，返回token<bd581c7a-33df-4944-b001-c91f044ce209>
+2019-08-29 09:35:11,344 - root - INFO - 海妖后台登陆成功，返回token<eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mbyI6eyJlbWFpbCI6IiIsImdtdENyZWF0ZSI6MTQ2MTA4MTE0MDAwMCwiZ210TW9kaWZpZWQiOjE1NDcwNzA4MDEwMDAsImlkIjo5MTQwMTM2LCJpbWFnZSI6Ii8vY2RuMS5zaG93am95LmNvbS9zaG9wL3VzZXJfaGVhZC8yMDE4MDUxNC9YUjhRRkFIOVlSQUVZVkRVVFozQjE1MjYyODM5MzExODAuanBnIiwiaXNFbmFibGUiOnRydWUsImlzRmFrZSI6MCwibmljayI6Iua1t-WmliIsInNleFR5cGUiOiJtIiwidGVsIjoiMTM1NjcxMzY2NTQiLCJ1c2VybmFtZSI6Iua1t-WmliIsImFjY291bnRfdHlwZSI6MSwiYnluYW1lIjoi5rW35aaWIiwicmVhbE5hbWUiOiLmtbflppYiLCJzdXBwbGllcklkIjpbMF19LCJpYXQiOjE1NjcwNDI1MTEsImV4cCI6MTU2NzY0NzMxMX0.7iK8Ih0anOxWHVV1jMhhgDbWgEeTUeafpq0lpUJ3Ca8>
+2019-08-29 09:35:11,443 - root - INFO - 18069425303用户开始登录，返回登录信息f809fa34-1ac1-45fd-881a-f0fa327cfc04
+2019-08-29 09:35:11,859 - root - INFO - 18069425303登录成功，返回token<d80055b6-9b72-466a-89dd-d8246dd40d06>
+2019-08-29 09:35:11,867 - root - INFO - 测试用例开始执行
+2019-08-29 09:35:11,900 - root - INFO - 获取用例数据：{'id': 4.0, 'module': '达人圈', 'url': '/api/community/viewLive?noteId={0}', 'name': '观众加入直播', 'key': '直播观众', 'param': 'not argument', 'place': "sit;talent_circle;SELECT pull_url from talent_circle.note_live_info  where note_id = '{0}';", 'way': 'GET', 'expect1': 'isSuccess=1', 'expect2': '【比较接口返回的pullUrl和数据库中的pullUrl】', 'expect3': '', 'expect4': ''}
+2019-08-29 09:35:11,901 - root - INFO - 测试用例执行完毕
+2019-08-29 09:35:11,902 - root - INFO - ----------------------------------

@@ -1,0 +1,42 @@
+#mysql和redis连接信息
+kf:
+  trade:
+     - 192.168.0.151
+     - root
+     - yunjee0515ueopro1234
+  user:
+     - rm-uf628w7x0izz2v4w8so.mysql.rds.aliyuncs.com
+     - comm_read
+     - hjdgelkg
+
+sit:
+  trade:
+     - rm-uf6eqo449rukbj7s5ro.mysql.rds.aliyuncs.com
+     - comm_readwrite
+     - ljkljadae
+  user:
+     - rm-uf628w7x0izz2v4w8so.mysql.rds.aliyuncs.com
+     - comm_readwrite
+     - ljkljadae
+  talent_circle:
+     - rm-uf6rb2p4630j554h32o.mysql.rds.aliyuncs.com
+     - darenquan
+     - biu!@19AbcD
+  message:
+     - rm-uf67ej73cbmk90b37go.mysql.rds.aliyuncs.com
+     - comm_readwrite
+     - ljkljadae
+  shop:
+     - rm-uf6bs7ffvl3u69w714o.mysql.rds.aliyuncs.com
+     - comm_readwrite
+     - ljkljadae
+
+online:
+
+redis:
+  kf:
+     - 192.168.0.223
+     - 6380
+     - CFZFnlvmybr7h1w7Go8GKw6fiDI7hD5L
+
+

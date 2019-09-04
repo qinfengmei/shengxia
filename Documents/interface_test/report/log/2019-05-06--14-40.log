@@ -1,0 +1,109 @@
+2019-05-06 14:40:01,936 - root - INFO - 15869147600用户开始登录，返回登录信息f8d6afe2-5b8b-4f68-a965-7ac1353a3e7a
+2019-05-06 14:40:02,633 - root - INFO - 15869147600登录成功，返回token<625d99bd-da72-4ac5-b8d8-88f6a28de0dd>
+2019-05-06 14:40:02,710 - root - INFO - 测试用例开始执行
+2019-05-06 14:40:02,723 - root - INFO - 获取用例数据:{'key': 'app接口', 'param': 'not argument', 'id': 1.0, 'module': '商品支付', 'name': '确认订单金额正确', 'place': '', 'url': '/shop/confirmorderInfo?addressId=0&cardId=0&itemInfos=169241%3A1&shopInfos=169241%3A489042', 'expect2': 'itemZhName=LILIA雪肌凝时精粹水 120ml ', 'expect1': 'totalPrice=5.02', 'way': 'GET'}
+2019-05-06 14:40:02,933 - root - INFO - 成功发起GET请求(app接口)，请求结果code为：200, 请求结果字段为：{"count":0,"data":{"actityPrice":0,"address":{"address":"海创园16幢尚妆网","area":"海南区","city":"乌海市","fullName":"云舒","id":3996371,"identityCardId":"","isDefault":true,"mobilePhone":"15906675237","prov":"内蒙古自治区"},"addressId":3996371,"couponPrice":0,"haitaoOrder":false,"hasGiveaway":false,"hasNormalItem":false,"isCrossBorderOrder":0,"isHideUser":false,"itemInfos":["169241:1"],"items":[{"brandZhName":"LILIA雪肌凝时精粹水 120ml ","delayDeliveryDays":30,"id":169241,"image":"https://cdn1.showjoy.com/shop/product/20180330/MEXAM8RZSLC9UOZ33D2M1522400950994.png","inventory":999,"isCrossBorder":0,"isGiveaway":false,"isGroupon":false,"isHaitao":false,"isTrial":false,"itemType":0,"itemZhName":"LILIA雪肌凝时精粹水 120ml ","needIdCard":false,"needIdCardType":0,"originalPrice":168,"overTimePayback":false,"pointValue":0,"price":0.02,"propMap":{"规格":"1.0null"},"quantity":1,"specialColumn":false,"specification":"1.0null","supplierId":0,"taxRate":0}],"itemsTotalPrice":0.02,"itemsTotalTaxPrice":0,"limitSales":[],"loginUser":{"email":"","gmtCreate":1532951624000,"gmtModified":1534246804000,"id":8538596,"image":"//file.showjoy.com/images/09/091ed0cf941d4107a073bc1ff8c875fe.jpg","isEnable":true,"isFake":0,"nick":"7600pThWwj","password":"3fec45730985bf1ae1dc9a15fb560e65","sexType":"","tel":"15869147600","userAuth":"ROLE_USER","username":"7600pThWwj"},"needIdCardType":0,"noTransFee":false,"noVolumeSales":[],"pageName":"orderEntry","paymode":"alipay","postFee":5,"redirectEdit":1,"shopInfos":["169241:489042"],"skuTaxInfo":[],"sourceShop":{"gmtCreate":1532951640000,"gmtModified":1532953161000,"headImage":"//file.showjoy.com/images/09/091ed0cf941d4107a073bc1ff8c875fe.jpg","id":489042,"isProbation":false,"isVip":0,"membersCount":0,"name":"7600pThWwj","paid":true,"parentId":235358,"payOrderId":503302,"position":0,"source":"","userId":8538596,"validTime":1690646400000,"vipShopId":0},"stopSales":[],"totalPrice":5.02,"usableCouponNumber":0},"isRedirect":0,"isSuccess":1,"login":0}
+2019-05-06 14:40:02,934 - root - INFO - 请求传入数据：url:/shop/confirmorderInfo?addressId=0&cardId=0&itemInfos=169241%3A1&shopInfos=169241%3A489042,key:app接口,参数:not argument,请求方式：GET
+2019-05-06 14:40:02,935 - root - INFO - 对【商品价格】断言,断言结果--预期值5.02 == 实际值5.02
+2019-05-06 14:40:02,936 - root - INFO - 对【商品名称】断言,断言结果--预期值LILIA雪肌凝时精粹水 120ml  == 实际值LILIA雪肌凝时精粹水 120ml 
+2019-05-06 14:40:02,937 - root - INFO - 测试用例执行完毕
+2019-05-06 14:40:02,938 - root - INFO - ----------------------------------
+2019-05-06 14:40:02,939 - root - INFO - 测试用例开始执行
+2019-05-06 14:40:02,947 - root - INFO - 获取用例数据:{'key': 'app接口', 'param': 'not argument', 'id': 2.0, 'module': '商品支付', 'name': '提交订单成功，未支付', 'place': "sit,trade,select status_code from trade_order_status where order_number = '{0}'", 'url': '/api/shop/submitOrder?addressId=3996371&cardId=0&itemInfos=169241%3A1&shopInfos=169241%3A489042&remark=', 'expect2': 'tradestatus=21', 'expect1': '', 'way': 'GET'}
+2019-05-06 14:40:03,502 - root - INFO - 成功发起GET请求(app接口)，请求结果code为：200, 请求结果字段为：{"count":0,"data":{"orderNumber":"5155712480458164","hasHaiTao":false},"isRedirect":0,"isSuccess":1,"login":0}
+2019-05-06 14:40:03,505 - root - INFO - 请求传入数据：url:/api/shop/submitOrder?addressId=3996371&cardId=0&itemInfos=169241%3A1&shopInfos=169241%3A489042&remark=,key:app接口,参数:not argument,请求方式：GET
+2019-05-06 14:40:03,640 - root - INFO - 成功登录sit环境数据库：trade，版本为：5.6.70，执行SQL：select status_code from trade_order_status where order_number = '5155712480458164'
+2019-05-06 14:40:03,655 - root - INFO - 查询结果：21
+2019-05-06 14:40:03,657 - root - INFO - 对【订单号】断言,生成订单号5155712480458164
+2019-05-06 14:40:03,658 - root - INFO - 对【订单状态】断言,断言结果--预期值21 == 实际值21
+2019-05-06 14:40:03,661 - root - INFO - 测试用例执行完毕
+2019-05-06 14:40:03,662 - root - INFO - ----------------------------------
+2019-05-06 14:40:03,663 - root - INFO - 测试用例开始执行
+2019-05-06 14:40:03,670 - root - INFO - 获取用例数据:{'key': 'app接口', 'param': 'not argument', 'id': 3.0, 'module': '商品支付', 'name': '使用余额订单支付成功', 'place': "sit,trade,select status_code from trade_order_status where order_number = '{0}'", 'url': '/Fake_Pay?orderNumber={0}', 'expect2': 'tradestatus=22', 'expect1': 'isSuccess=1', 'way': 'GET'}
+2019-05-06 14:40:03,733 - root - INFO - 成功发起GET请求(app接口)，请求结果code为：200, 请求结果字段为：{"count":0,"isRedirect":0,"isSuccess":1,"login":0}
+2019-05-06 14:40:03,734 - root - INFO - 请求传入数据：url:/Fake_Pay?orderNumber={0},key:app接口,参数:not argument,请求方式：GET
+2019-05-06 14:40:03,858 - root - INFO - 成功登录sit环境数据库：trade，版本为：5.6.70，执行SQL：select status_code from trade_order_status where order_number = '5155712480458164'
+2019-05-06 14:40:03,876 - root - INFO - 查询结果：22
+2019-05-06 14:40:03,878 - root - INFO - 对【订购结果】断言,断言结果--预期值1 == 实际值1
+2019-05-06 14:40:03,879 - root - INFO - 对【订单状态】断言,断言结果--支付成功预期值22 == 实际值22
+2019-05-06 14:40:03,880 - root - INFO - 测试用例执行完毕
+2019-05-06 14:40:03,882 - root - INFO - ----------------------------------
+2019-05-06 14:40:03,883 - root - INFO - 测试用例开始执行
+2019-05-06 14:40:03,897 - root - INFO - 获取用例数据:{'key': 'app接口', 'param': 'not argument', 'id': 4.0, 'module': '商品支付', 'name': '取消订单成功', 'place': "sit,trade,select status_code from trade_order_status where order_number = '{0}'", 'url': '/api/trade/customer/cancelOrder?name=%E5%BC%A0%E5%BC%A0&tel=15868147253&orderNumber={0}&reason=%E6%8B%8D%E9%94%99%2F%E5%A4%9A%E6%8B%8D%2F%E4%B8%8D%E6%83%B3%E8%A6%81', 'expect2': 'tradestatus=-2', 'expect1': 'isSuccess=1', 'way': 'GET'}
+2019-05-06 14:40:05,456 - root - INFO - 成功发起GET请求(app接口)，请求结果code为：200, 请求结果字段为：{"count":0,"isRedirect":0,"isSuccess":1,"login":0}
+2019-05-06 14:40:05,458 - root - INFO - 请求传入数据：url:/api/trade/customer/cancelOrder?name=%E5%BC%A0%E5%BC%A0&tel=15868147253&orderNumber={0}&reason=%E6%8B%8D%E9%94%99%2F%E5%A4%9A%E6%8B%8D%2F%E4%B8%8D%E6%83%B3%E8%A6%81,key:app接口,参数:not argument,请求方式：GET
+2019-05-06 14:40:06,611 - root - INFO - 成功登录sit环境数据库：trade，版本为：5.6.70，执行SQL：select status_code from trade_order_status where order_number = '5155712480458164'
+2019-05-06 14:40:06,626 - root - INFO - 查询结果：-2
+2019-05-06 14:40:06,627 - root - INFO - 对【订购结果】断言,断言结果--预期值1 == 实际值1
+2019-05-06 14:40:06,628 - root - INFO - 对【订单状态】断言,断言结果--支付成功预期值-2 == 实际值-2
+2019-05-06 14:40:06,628 - root - INFO - 测试用例执行完毕
+2019-05-06 14:40:06,629 - root - INFO - ----------------------------------
+2019-05-06 14:40:06,630 - root - INFO - 测试用例开始执行
+2019-05-06 14:40:06,638 - root - INFO - 获取用例数据:{'key': 'app接口', 'param': 'not argument', 'id': 9.0, 'module': '用户操作', 'name': '首页信息展示', 'place': '', 'url': '/api/getHomePageCategory?', 'expect2': 'moduleNames=["美妆个护", "男装女装", "食品饮料", "鞋包配饰", "蔬果生鲜", "居家百货", "家纺家电", "母婴精品", "童装鞋帽", "养生保健", "达拍档", "店长服务", "课程专栏"]', 'expect1': 'isSuccess=1', 'way': 'GET'}
+2019-05-06 14:40:06,736 - root - INFO - 成功发起GET请求(app接口)，请求结果code为：200, 请求结果字段为：{"count":0,"data":{"isOwnerShop":true,"moduleNames":["美妆个护","男装女装","食品饮料","鞋包配饰","蔬果生鲜","居家百货","家纺家电","母婴精品","童装鞋帽","养生保健","达拍档","店长服务","课程专栏"],"familyNumberCount":0},"isRedirect":0,"isSuccess":1,"login":0}
+2019-05-06 14:40:06,737 - root - INFO - 请求传入数据：url:/api/getHomePageCategory?,key:app接口,参数:not argument,请求方式：GET
+2019-05-06 14:40:06,737 - root - INFO - 对【isSuccess】断言,断言结果--预期值1 == 实际值1
+2019-05-06 14:40:06,738 - root - INFO - 对【商品类别】断言,断言结果--预期值["美妆个护", "男装女装", "食品饮料", "鞋包配饰", "蔬果生鲜", "居家百货", "家纺家电", "母婴精品", "童装鞋帽", "养生保健", "达拍档", "店长服务", "课程专栏"] == 实际值["美妆个护", "男装女装", "食品饮料", "鞋包配饰", "蔬果生鲜", "居家百货", "家纺家电", "母婴精品", "童装鞋帽", "养生保健", "达拍档", "店长服务", "课程专栏"]
+2019-05-06 14:40:06,739 - root - INFO - 测试用例执行完毕
+2019-05-06 14:40:06,740 - root - INFO - ----------------------------------
+2019-05-06 14:40:06,741 - root - INFO - 测试用例开始执行
+2019-05-06 14:40:06,748 - root - INFO - 获取用例数据:{'key': 'app接口', 'param': 'not argument', 'id': 10.0, 'module': '用户操作', 'name': '店铺信息展示', 'place': '', 'url': '/api/shop/shopInfo', 'expect2': 'nickName=颜', 'expect1': 'nick=7600pThWwj', 'way': 'GET'}
+2019-05-06 14:40:06,889 - root - INFO - 成功发起GET请求(app接口)，请求结果code为：200, 请求结果字段为：{"count":0,"data":{"nick":"7600pThWwj","userEd":"yqH3ElaSQXI","shop":{"gmtCreate":1532951640000,"gmtModified":1532953161000,"headImage":"//file.showjoy.com/images/09/091ed0cf941d4107a073bc1ff8c875fe.jpg","id":489042,"isProbation":false,"isVip":0,"membersCount":0,"name":"7600pThWwj","paid":true,"parentId":235358,"payOrderId":503302,"position":0,"source":"","userId":8538596,"validTime":1690646400000,"vipShopId":0},"nickName":"颜","headimgurl":"//thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIJcnqT8h9u8Ikiavibex3lrR0M8kuLbBkzyVOjV8dJR4TmuNSA344RF3guibKoaCic6V0S6POmQwSibXQ/132","tel":"15869147600","isCommonweal":false,"isBindWx":true,"position":0,"isShowServiceSupport":true},"isRedirect":0,"isSuccess":1,"login":0}
+2019-05-06 14:40:06,891 - root - INFO - 请求传入数据：url:/api/shop/shopInfo,key:app接口,参数:not argument,请求方式：GET
+2019-05-06 14:40:06,894 - root - INFO - 对【店铺名称】断言,断言结果--预期值7600pThWwj == 实际值7600pThWwj
+2019-05-06 14:40:06,896 - root - INFO - 对【关联微信名称】断言,断言结果--预期值颜 == 实际值颜
+2019-05-06 14:40:06,898 - root - INFO - 测试用例执行完毕
+2019-05-06 14:40:06,900 - root - INFO - ----------------------------------
+2019-05-06 14:40:06,902 - root - INFO - 测试用例开始执行
+2019-05-06 14:40:06,910 - root - INFO - 获取用例数据:{'key': 'app接口', 'param': '{"userId": "8538596"}', 'id': 11.0, 'module': '用户操作', 'name': '消息通知成功', 'place': '', 'url': '/api/message/count', 'expect2': '', 'expect1': 'isSuccess=1', 'way': 'POST'}
+2019-05-06 14:40:06,956 - root - INFO - 成功发起POST请求(app接口)，请求结果code为：200, 请求结果字段为：{"count":282,"isRedirect":0,"isSuccess":1,"login":0}
+2019-05-06 14:40:06,957 - root - INFO - 请求传入数据：url:/api/message/count,key:app接口,参数:{"userId": "8538596"},请求方式：POST
+2019-05-06 14:40:06,958 - root - INFO - 对【isSuccess】断言,断言结果--预期值1 == 实际值1,收到282条消息
+2019-05-06 14:40:06,958 - root - INFO - 测试用例执行完毕
+2019-05-06 14:40:06,959 - root - INFO - ----------------------------------
+2019-05-06 14:40:06,960 - root - INFO - 测试用例开始执行
+2019-05-06 14:40:06,968 - root - INFO - 获取用例数据:{'key': 'app接口', 'param': 'not argument', 'id': 12.0, 'module': '用户操作', 'name': '个人信息展示', 'place': '', 'url': '/api/user/center ', 'expect2': 'shoppingCartNum=3', 'expect1': 'positionName=达人店长', 'way': 'GET'}
+2019-05-06 14:40:07,062 - root - INFO - 成功发起GET请求(app接口)，请求结果code为：200, 请求结果字段为：{"count":0,"data":{"headImgUrl":"//file.showjoy.com/images/09/091ed0cf941d4107a073bc1ff8c875fe.jpg","isHaveDisabilityCard":false,"isShowRenewBtn":false,"nickname":"7600pThWwj","positionName":"达人店长","shopCashbackVO":{"achieveTime1":false,"cumulativeAmount":0,"id":0,"reachStatus":-2,"shopId":0,"surplusAmount":0},"shopId":489042,"shopkeeper":true,"shoppingCartNum":3,"spreadImgUrlList":["//cdn1.showjoy.com/shop/images/20180919/GMFRG82KL7RGYQHAZH2U1537321761088.jpg","//cdn1.showjoy.com/shop/images/20180919/RW3Z3WCJ1XRZHB51WPE91537321765438.jpg","//cdn1.showjoy.com/shop/images/20180919/KQ3A5OYY9A5X2U3QLH941537321764293.jpg","//cdn1.showjoy.com/shop/images/20180918/1921ZY2F1O7GUMRC44B91537249028871.jpg","//cdn1.showjoy.com/shop/images/20180918/PFTBTABM4UO3Z3YR7ILU1537249032943.jpg","//cdn1.showjoy.com/shop/images/20180918/IYSYSCVQ6H44DMDXHYYZ1537249039803.png","//cdn1.showjoy.com/shop/images/20180918/7JOHNAQCV6ER5KWGEUTX1537249041404.png","//cdn1.showjoy.com/shop/images/20180918/NJKL7OKTCKNQXXWDNWFV1537249046146.JPG","//cdn1.showjoy.com/shop/images/20180918/ERDLGVT2DP4KJ4EJT5KX1537249047492.JPG","//cdn1.showjoy.com/shop/images/20180918/ZNZBHJ89KTN82ZFMG67H1537249049868.JPG"],"userId":8538596},"isRedirect":0,"isSuccess":1,"login":0}
+2019-05-06 14:40:07,065 - root - INFO - 请求传入数据：url:/api/user/center ,key:app接口,参数:not argument,请求方式：GET
+2019-05-06 14:40:07,067 - root - INFO - 对【用户类别】断言,断言结果--预期值达人店长 == 实际值达人店长
+2019-05-06 14:40:07,069 - root - INFO - 对【购物车商品量】断言,断言结果--预期值3 == 实际值3
+2019-05-06 14:40:07,071 - root - INFO - 测试用例执行完毕
+2019-05-06 14:40:07,073 - root - INFO - ----------------------------------
+2019-05-06 14:40:07,079 - root - INFO - 测试用例开始执行
+2019-05-06 14:40:07,091 - root - INFO - 获取用例数据:{'key': 'app接口', 'param': 'not argument', 'id': 5.0, 'module': '注册登录', 'name': '用户未注册', 'place': "sit,user,update user_info set tel='15868147456' where tel='15868137404'", 'url': '/api/shop/getCode?tel=15868137404&method=1&isRegister=false', 'expect2': 'msg=账号不存在，请先注册~', 'expect1': 'isSuccess=0', 'way': 'GET'}
+2019-05-06 14:40:07,138 - root - INFO - 成功发起GET请求(app接口)，请求结果code为：200, 请求结果字段为：{"count":0,"isRedirect":0,"isSuccess":0,"login":0,"msg":"账号不存在，请先注册~"}
+2019-05-06 14:40:07,139 - root - INFO - 请求传入数据：url:/api/shop/getCode?tel=15868137404&method=1&isRegister=false,key:app接口,参数:not argument,请求方式：GET
+2019-05-06 14:40:07,140 - root - INFO - 对【isSuccess】断言,断言结果--预期值0 == 实际值0
+2019-05-06 14:40:07,141 - root - INFO - 对【msg】断言,断言结果--预期值账号不存在，请先注册~ == 实际值账号不存在，请先注册~
+2019-05-06 14:40:07,142 - root - INFO - 测试用例执行完毕
+2019-05-06 14:40:07,143 - root - INFO - ----------------------------------
+2019-05-06 14:40:07,144 - root - INFO - 测试用例开始执行
+2019-05-06 14:40:07,153 - root - INFO - 获取用例数据:{'key': 'app接口', 'param': 'not argument', 'id': 6.0, 'module': '注册登录', 'name': '短验注册登录成功', 'place': "sit,user,select id from user_info where tel='15868137404'", 'url': '/api/shop/shopLogin?tel=15868137404&code=123456', 'expect2': 'userId从数据库取', 'expect1': 'tel=15868137404', 'way': 'GET'}
+2019-05-06 14:40:07,256 - root - INFO - 成功发起GET请求(app接口)，请求结果code为：200, 请求结果字段为：{"count":0,"data":{"bindMobile":false,"bindWx":false,"firstLogin":true,"hasInviteCode":false,"mobileLoginUser":[{"bindWx":false,"image":"http://file.showjoy.com/images/12/12883d98a25d4b55aed6d2813cf40eac.jpg","shopId":0,"tel":"15868137404","userId":9140714}],"moreUsers":false,"tel":"15868137404","token":"38735fd0-1fa9-4133-8eab-396ff9537b3b"},"isRedirect":0,"isSuccess":1,"login":0}
+2019-05-06 14:40:07,257 - root - INFO - 请求传入数据：url:/api/shop/shopLogin?tel=15868137404&code=123456,key:app接口,参数:not argument,请求方式：GET
+2019-05-06 14:40:07,410 - root - INFO - 成功登录sit环境数据库：user，版本为：5.6.70，执行SQL：select id from user_info where tel='15868137404'
+2019-05-06 14:40:07,427 - root - INFO - 查询结果：9140714
+2019-05-06 14:40:07,428 - root - INFO - 对【手机号】断言,断言结果--预期值15868137404 == 实际值15868137404
+2019-05-06 14:40:07,429 - root - INFO - 对【userId】断言,断言结果--预期值9140714 == 实际值9140714
+2019-05-06 14:40:07,430 - root - INFO - 测试用例执行完毕
+2019-05-06 14:40:07,431 - root - INFO - ----------------------------------
+2019-05-06 14:40:07,432 - root - INFO - 测试用例开始执行
+2019-05-06 14:40:07,441 - root - INFO - 获取用例数据:{'key': 'app接口', 'param': 'not argument', 'id': 7.0, 'module': '注册登录', 'name': '获取折扣码当前店主', 'place': '', 'url': '/api/shop/login/getInviterInfo?code=jktew8e', 'expect2': 'name=郝A5店', 'expect1': 'isSuccess=1', 'way': 'GET'}
+2019-05-06 14:40:07,494 - root - INFO - 成功发起GET请求(app接口)，请求结果code为：200, 请求结果字段为：{"count":0,"data":[{"image":"//cdn1.showjoy.com/shop/user_head/20180514/XR8QFAH9YRAEYVDUTZ3B1526283931180.jpg","name":"郝A5店","tel":"15868147451"},{"image":"http://cdn1.showjoy.com/images/03/03e8f2d89105428288c20122e68cc2af.jpg","name":"Bernie宋 ","tel":""},{"image":"http://cdn1.showjoy.com/images/05/05485b37fa184154bc785364dc995284.jpg","name":"夏洛洛 ","tel":""},{"image":"http://cdn1.showjoy.com/images/0a/0a6453d3a9054245967d9827ee72f7d3.jpg","name":"夜l寂寞 ","tel":""},{"image":"http://cdn1.showjoy.com/images/13/13f2755c6db54153b0e5748e615cd2fa.jpg","name":"小queen是秋秋","tel":""}],"isRedirect":0,"isSuccess":1,"login":0}
+2019-05-06 14:40:07,495 - root - INFO - 请求传入数据：url:/api/shop/login/getInviterInfo?code=jktew8e,key:app接口,参数:not argument,请求方式：GET
+2019-05-06 14:40:07,496 - root - INFO - 对【isSuccess】断言,断言结果--预期值1 == 实际值1
+2019-05-06 14:40:07,497 - root - INFO - 对【邀请人name】断言,断言结果--预期值郝A5店 == 实际值郝A5店
+2019-05-06 14:40:07,498 - root - INFO - 测试用例执行完毕
+2019-05-06 14:40:07,499 - root - INFO - ----------------------------------
+2019-05-06 14:40:07,500 - root - INFO - 测试用例开始执行
+2019-05-06 14:40:07,510 - root - INFO - 获取用例数据:{'key': 'app接口', 'param': 'not argument', 'id': 8.0, 'module': '注册登录', 'name': '提交折扣码注册成功', 'place': "sit,user,select nick from user_info where tel='15868137404'", 'url': '/api/shop/login/confirmCustomService?code=jktew8e', 'expect2': 'nickName从数据库取', 'expect1': 'parentId=551429', 'way': 'GET'}
+2019-05-06 14:40:07,947 - root - INFO - 成功发起GET请求(app接口)，请求结果code为：200, 请求结果字段为：{"count":0,"data":{"id":796865,"isProbation":true,"isVip":0,"membersCount":0,"name":"7404yMAhGc","paid":false,"parentId":551429,"payOrderId":0,"position":0,"userId":9140714,"vipShopId":0},"isRedirect":0,"isSuccess":1,"login":0}
+2019-05-06 14:40:07,948 - root - INFO - 请求传入数据：url:/api/shop/login/confirmCustomService?code=jktew8e,key:app接口,参数:not argument,请求方式：GET
+2019-05-06 14:40:08,078 - root - INFO - 成功登录sit环境数据库：user，版本为：5.6.70，执行SQL：select nick from user_info where tel='15868137404'
+2019-05-06 14:40:08,098 - root - INFO - 查询结果：7404yMAhGc
+2019-05-06 14:40:08,100 - root - INFO - 对【parentId】断言,断言结果--预期值551429 == 实际值551429
+2019-05-06 14:40:08,101 - root - INFO - 对【邀请人】断言,断言结果--预期值7404yMAhGc == 实际值7404yMAhGc
+2019-05-06 14:40:09,247 - root - INFO - 成功登录sit环境数据库：user，版本为：5.6.70，执行SQL：update user_info set tel='15868147456' where tel='15868137404'
+2019-05-06 14:40:09,279 - root - INFO - 更新数据成功
+2019-05-06 14:40:09,280 - root - INFO - 测试用例执行完毕
+2019-05-06 14:40:09,281 - root - INFO - ----------------------------------

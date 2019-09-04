@@ -1,0 +1,68 @@
+2019-08-29 16:52:39,210 - root - INFO - 18768278576用户开始登录，返回登录信息b5f99e28-e29d-4bc6-9fb9-fa09eb935667
+2019-08-29 16:52:39,515 - root - INFO - 18768278576登录成功，返回token<7823ee6a-5142-4961-915d-2c4d7eeca075>
+2019-08-29 16:52:39,626 - root - INFO - 海妖后台登陆成功，返回token<eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mbyI6eyJlbWFpbCI6IiIsImdtdENyZWF0ZSI6MTQ2MTA4MTE0MDAwMCwiZ210TW9kaWZpZWQiOjE1NDcwNzA4MDEwMDAsImlkIjo5MTQwMTM2LCJpbWFnZSI6Ii8vY2RuMS5zaG93am95LmNvbS9zaG9wL3VzZXJfaGVhZC8yMDE4MDUxNC9YUjhRRkFIOVlSQUVZVkRVVFozQjE1MjYyODM5MzExODAuanBnIiwiaXNFbmFibGUiOnRydWUsImlzRmFrZSI6MCwibmljayI6Iua1t-WmliIsInNleFR5cGUiOiJtIiwidGVsIjoiMTM1NjcxMzY2NTQiLCJ1c2VybmFtZSI6Iua1t-WmliIsImFjY291bnRfdHlwZSI6MSwiYnluYW1lIjoi5rW35aaWIiwicmVhbE5hbWUiOiLmtbflppYiLCJzdXBwbGllcklkIjpbMF19LCJpYXQiOjE1NjcwNjg3NTksImV4cCI6MTU2NzY3MzU1OX0.QDCpgyDPw35egTYZxPZGkcBrF78EXzd_nbmGjA56o88>
+2019-08-29 16:52:39,691 - root - INFO - 18069425303用户开始登录，返回登录信息f809fa34-1ac1-45fd-881a-f0fa327cfc04
+2019-08-29 16:52:40,006 - root - INFO - 18069425303登录成功，返回token<5c4924cd-267a-4735-88ed-7e107eab0bca>
+2019-08-29 16:52:40,013 - root - INFO - 测试用例开始执行
+2019-08-29 16:52:40,051 - root - INFO - 获取用例数据:{'id': 1.0, 'module': '达人圈', 'url': '/api/community/publishNote', 'name': '发起直播', 'key': 'app接口', 'param': '{"images":"https://git-cdn.oss-cn-hangzhou.aliyuncs.com/shop/community/20190827/NCHPE3E5755S82V5A6J41566871150340-640x427.jpg","watermark":"false","noteType":"1","content":"哈哈哈哈哈","viewerType":"0"}', 'place': '', 'way': 'POST', 'expect1': 'isSuccess=1', 'expect2': 'msg=发布成功', 'expect3': '', 'expect4': ''}
+2019-08-29 16:52:40,437 - root - INFO - 成功发起POST请求(app接口)，请求结果code为：200, 请求结果字段为：{"count":0,"data":{"noteId":1259,"noteUserName":"店主盛夏","pushLiveUrl":"rtmp://pushlive.showjoy.com/live/88872881567068760?txSecret=01503c9b8484cc2686f223a7536367fc&txTime=5D68E3D8"},"isRedirect":0,"isSuccess":1,"login":0,"msg":"发布成功"}
+2019-08-29 16:52:40,438 - root - INFO - 请求传入数据：url:/api/community/publishNote,key:app接口,参数:{"images":"https://git-cdn.oss-cn-hangzhou.aliyuncs.com/shop/community/20190827/NCHPE3E5755S82V5A6J41566871150340-640x427.jpg","watermark":"false","noteType":"1","content":"哈哈哈哈哈","viewerType":"0"},请求方式：POST
+2019-08-29 16:52:40,439 - root - INFO - 对【isSuccess】断言,断言结果--预期值1 == 实际值1
+2019-08-29 16:52:40,440 - root - INFO - 对【发布结果】断言,断言结果--预期值发布成功 == 实际值发布成功
+2019-08-29 16:52:40,441 - root - INFO - 测试用例执行完毕
+2019-08-29 16:52:40,442 - root - INFO - ----------------------------------
+2019-08-29 16:52:40,443 - root - INFO - 测试用例开始执行
+2019-08-29 16:52:40,453 - root - INFO - 获取用例数据：{'id': 2.0, 'module': '达人圈', 'url': '/api/community/startLive', 'name': '推流成功', 'key': 'app接口', 'param': '{"noteId":{0}}', 'place': "sit;talent_circle;SELECT b.live_status from talent_circle.note_info a,talent_circle.note_live_info b where a.user_id='8887288'  ORDER BY b.gmt_create desc LIMIT 1;", 'way': 'POST', 'expect1': 'isSuccess=1', 'expect2': 'live_status=1', 'expect3': '', 'expect4': ''}
+2019-08-29 16:52:40,504 - root - INFO - 成功发起POST请求(app接口)，请求结果code为：200, 请求结果字段为：{"count":0,"isRedirect":0,"isSuccess":1,"login":0}
+2019-08-29 16:52:40,506 - root - INFO - 请求传入数据：url:/api/community/startLive,key:app接口,参数:{"noteId":{0}},请求方式：POST
+2019-08-29 16:52:41,875 - root - INFO - 连接数据库成功
+2019-08-29 16:52:41,884 - root - INFO - 成功登录sit环境数据库：talent_circle，版本为：5.7.25-log，执行SQL：SELECT b.live_status from talent_circle.note_info a,talent_circle.note_live_info b where a.user_id='8887288'  ORDER BY b.gmt_create desc LIMIT 1
+2019-08-29 16:52:41,899 - root - INFO - 查询结果：1
+2019-08-29 16:52:41,900 - root - INFO - 推流成功，对【isSuccess】断言,断言结果--预期值1 == 实际值1
+2019-08-29 16:52:41,901 - root - INFO - 对【直播状态】断言,断言结果--预期值1 == 实际值1
+2019-08-29 16:52:41,902 - root - INFO - 测试用例执行完毕
+2019-08-29 16:52:41,902 - root - INFO - ----------------------------------
+2019-08-29 16:52:41,904 - root - INFO - 测试用例开始执行
+2019-08-29 16:52:41,915 - root - INFO - 获取用例数据：{'id': 3.0, 'module': '达人圈', 'url': '/api/community/getViewers?noteId={0}', 'name': '观看直播人数', 'key': 'app接口', 'param': 'not argument', 'place': "sit;talent_circle;SELECT live_status from talent_circle.note_live_info  where note_id = '{0}';", 'way': 'GET', 'expect1': 'isSuccess=1', 'expect2': 'live_status=1', 'expect3': '', 'expect4': ''}
+2019-08-29 16:52:41,959 - root - INFO - 成功发起GET请求(http://shop.m.showjoy.com.cn/api/community/getViewers?noteId=1259)，请求url为：app接口，请求结果code为：200, 请求结果字段为：{"count":0,"data":0,"isRedirect":0,"isSuccess":1,"login":0}
+2019-08-29 16:52:41,960 - root - INFO - 请求传入数据：url:/api/community/getViewers?noteId={0},key:app接口,参数:not argument,请求方式：GET
+2019-08-29 16:52:43,117 - root - INFO - 连接数据库成功
+2019-08-29 16:52:43,127 - root - INFO - 成功登录sit环境数据库：talent_circle，版本为：5.7.25-log，执行SQL：SELECT live_status from talent_circle.note_live_info  where note_id = '1259'
+2019-08-29 16:52:43,169 - root - INFO - 查询结果：1
+2019-08-29 16:52:43,171 - root - INFO - 有人数观看，对【isSuccess】断言,断言结果--预期值1 == 实际值1
+2019-08-29 16:52:43,172 - root - INFO - 对观看人数断言,断言结果--预期值1 == 实际值1
+2019-08-29 16:52:43,173 - root - INFO - 测试用例执行完毕
+2019-08-29 16:52:43,173 - root - INFO - ----------------------------------
+2019-08-29 16:52:43,175 - root - INFO - 测试用例开始执行
+2019-08-29 16:52:43,185 - root - INFO - 获取用例数据：{'id': 4.0, 'module': '达人圈', 'url': '/api/community/viewLive?noteId={0}', 'name': '观众加入直播', 'key': '直播观众', 'param': 'not argument', 'place': "sit;talent_circle;SELECT pull_url from talent_circle.note_live_info  where note_id = '{0}';", 'way': 'GET', 'expect1': 'isSuccess=1', 'expect2': '【比较接口返回的pullUrl和数据库中的pullUrl】', 'expect3': '', 'expect4': ''}
+2019-08-29 16:52:43,325 - root - INFO - 成功发起GET请求(http://shop.m.showjoy.com.cn/api/community/viewLive?noteId=1259)，请求url为：直播观众，请求结果code为：200, 请求结果字段为：{"count":0,"data":{"followStatus":2,"headImage":"https://cdn1.showjoy.com/images/8b/8b957c862d3249f6938e27d8e9a6c219.png","imageList":["https://git-cdn.oss-cn-hangzhou.aliyuncs.com/shop/community/20190827/NCHPE3E5755S82V5A6J41566871150340-640x427.jpg"],"likeNumber":0,"liveStatus":1,"needBuyVip":0,"pullUrl":"rtmp://playlive.showjoy.com/live/88872881567068760?txSecret=8f6844b3119594c50830263efb2c151e&txTime=5D68E3D8","shopId":544655,"userId":8887288,"userName":"盛夏名字有点长哈哈哈哈","viewerUserName":"你说呢哈哈哈","viewers":1},"isRedirect":0,"isSuccess":1,"login":0}
+2019-08-29 16:52:43,327 - root - INFO - 请求传入数据：url:/api/community/viewLive?noteId={0},key:直播观众,参数:not argument,请求方式：GET
+2019-08-29 16:52:43,432 - root - INFO - 连接数据库成功
+2019-08-29 16:52:43,446 - root - INFO - 成功登录sit环境数据库：talent_circle，版本为：5.7.25-log，执行SQL：SELECT pull_url from talent_circle.note_live_info  where note_id = '1259'
+2019-08-29 16:52:43,480 - root - INFO - 查询结果：rtmp://playlive.showjoy.com/live/88872881567068760?txSecret=8f6844b3119594c50830263efb2c151e&txTime=5D68E3D8
+2019-08-29 16:52:44,486 - root - INFO - 加入成功，对【isSuccess】断言,断言结果--预期值1 == 实际值1
+2019-08-29 16:52:44,488 - root - INFO - 对【加入状态】断言,断言结果--预期值rtmp://playlive.showjoy.com/live/88872881567068760?txSecret=8f6844b3119594c50830263efb2c151e&txTime=5D68E3D8 == 实际值rtmp://playlive.showjoy.com/live/88872881567068760?txSecret=8f6844b3119594c50830263efb2c151e&txTime=5D68E3D8
+2019-08-29 16:52:44,489 - root - INFO - 测试用例执行完毕
+2019-08-29 16:52:44,490 - root - INFO - ----------------------------------
+2019-08-29 16:52:44,491 - root - INFO - 测试用例开始执行
+2019-08-29 16:52:44,501 - root - INFO - 获取测试用例：{'id': 5.0, 'module': '达人圈', 'url': '/api/community/likeLive', 'name': '观众对直播进行点赞', 'key': '直播观众', 'param': '{"noteId":{0}}', 'place': "sit;talent_circle;SELECT live_status from talent_circle.note_live_info  where note_id = '{0}';", 'way': 'POST', 'expect1': 'isSuccess=1', 'expect2': 'live_status=1', 'expect3': '', 'expect4': ''}
+2019-08-29 16:52:44,666 - root - INFO - 成功发起POST请求(直播观众)，请求结果code为：200, 请求结果字段为：{"count":0,"isRedirect":0,"isSuccess":1,"login":0}
+2019-08-29 16:52:44,667 - root - INFO - 请求传入的数据：url:/api/community/likeLive,way:POST,param:{"noteId":{0}},key:直播观众
+2019-08-29 16:52:45,889 - root - INFO - 连接数据库成功
+2019-08-29 16:52:45,898 - root - INFO - 成功登录sit环境数据库：talent_circle，版本为：5.7.25-log，执行SQL：SELECT live_status from talent_circle.note_live_info  where note_id = '1259'
+2019-08-29 16:52:45,928 - root - INFO - 查询结果：1
+2019-08-29 16:52:45,929 - root - INFO - 点赞成功，对【isSuccess】断言，断言结果--预期值1==实际值1
+2019-08-29 16:52:45,930 - root - INFO - 对【直播状态】断言,断言结果--预期值1 == 实际值1
+2019-08-29 16:52:45,931 - root - INFO - 测试用例执行完毕
+2019-08-29 16:52:45,931 - root - INFO - ----------------------------------
+2019-08-29 16:52:45,933 - root - INFO - 测试用例开始执行
+2019-08-29 16:52:45,943 - root - INFO - 开始执行测试用例:{'id': 6.0, 'module': '达人圈', 'url': '/api/community/follow?userId=8887288', 'name': '观众对主播关注状态的变化', 'key': '直播观众', 'param': 'not argument', 'place': "sit;talent_circle;SELECT live_status from talent_circle.note_live_info  where note_id = '{0}';", 'way': 'GET', 'expect1': 'isSuccess=1', 'expect2': 'live_status=1', 'expect3': '', 'expect4': ''}
+2019-08-29 16:52:46,036 - root - INFO - 成功发起GET请求(http://shop.m.showjoy.com.cn/api/community/follow?userId=8887288)，请求url为：直播观众，请求结果code为：200, 请求结果字段为：{"count":0,"data":0,"isRedirect":0,"isSuccess":1,"login":0}
+2019-08-29 16:52:46,037 - root - INFO - 请求传入的数据：url：/api/community/follow?userId=8887288,param：not argument，key：直播观众，way：GET
+2019-08-29 16:52:47,169 - root - INFO - 连接数据库成功
+2019-08-29 16:52:47,178 - root - INFO - 成功登录sit环境数据库：talent_circle，版本为：5.7.25-log，执行SQL：SELECT live_status from talent_circle.note_live_info  where note_id = '1259'
+2019-08-29 16:52:47,245 - root - INFO - 查询结果：1
+2019-08-29 16:52:47,246 - root - WARNING - 关注/取关/互关失败，对【isSuccess】断言，断言结果--预期值1==实际值1
+2019-08-29 16:52:47,247 - root - INFO - 对【直播状态】断言,断言结果--预期值1 == 实际值1
+2019-08-29 16:52:47,248 - root - INFO - 测试用例执行完毕
+2019-08-29 16:52:47,249 - root - INFO - ----------------------------------
