@@ -223,9 +223,9 @@
     <list>
       <item itemvalue="Python.lg" />
       <item itemvalue="Python.request" />
+      <item itemvalue="Python.test" />
       <item itemvalue="Python tests.Unittests in case_darenquanzhibo.py" />
       <item itemvalue="Python tests.Unittests for case_darenquanzhibo.MyTest.testCase04" />
-      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
@@ -257,6 +257,7 @@
       <workItem from="1567142144504" duration="8612000" />
       <workItem from="1567390208572" duration="187000" />
       <workItem from="1567494478863" duration="5733000" />
+      <workItem from="1567505954171" duration="677000" />
     </task>
     <servers />
   </component>
